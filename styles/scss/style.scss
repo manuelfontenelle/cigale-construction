@@ -1,0 +1,38 @@
+@import "mixins";
+
+$primary-color: #64ff00;
+$secondary-color: rgb(70, 70, 223);
+
+h2 {
+	color: $primary-color;
+	@include lg {
+		color: $secondary-color;
+	}
+}
+
+.borderBottomCustom {
+	position: relative;
+	padding: 15px 0px;
+	// display: block;
+	&:hover {
+		// opacity: 1;
+		&:before {
+			width: 97%;
+		}
+	}
+	&:before {
+		transition: 600ms;
+		height: 3px;
+		content: "";
+		position: absolute;
+		background-color: #c3a079;
+		width: 0%;
+		bottom: 10px;
+	}
+
+	.active & {
+		&:before {
+			width: 100%;
+		}
+	}
+}
