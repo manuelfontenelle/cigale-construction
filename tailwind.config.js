@@ -9,11 +9,12 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				burtons: "Burtons", //custom font otf
-				// google fonts
-				playfairDisplay: ["Playfair Display", "sans-serif"],
+
+				// google fonts //
 				inter: ["Inter", "sans-serif"],
-				poppins: ["Poppins", "sans-serif"],
-				// google fonts
+				// playfairDisplay: ["Playfair Display", "sans-serif"],
+				// poppins: ["Poppins", "sans-serif"],
+				// google fonts //
 			},
 			backgroundImage: {
 				"intro-bg": "url('../public/intro_bg.jpg')",

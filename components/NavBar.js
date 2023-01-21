@@ -9,13 +9,13 @@ import { BsFillPersonLinesFill } from "react-icons/bs"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 import logo from "../public/logo.png"
 
-const navBar = ({ navHome }) => {
+const NavBar = ({ navHome }) => {
 	// detection page active pour Style Nav
 	const router = useRouter()
 	const currentRoute = router.pathname
 	//
 	const scrollPosition = useScrollPosition()
-	// console.log(scrollPosition)
+	console.log(scrollPosition)
 
 	const [nav, setNav] = useState(false)
 
@@ -145,4 +145,4 @@ const navBar = ({ navHome }) => {
 	)
 }
 
-export default navBar
+export default NavBar
