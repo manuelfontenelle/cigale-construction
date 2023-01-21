@@ -87,18 +87,15 @@ const navBar = ({ navHome }) => {
 				<div
 					className={
 						nav
-							? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-300"
+							? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-5 ease-in duration-300"
 							: "fixed left-[-100%] top-0 p-10 ease-in duration-300"
 					}
 				>
 					<div>
 						<div className="flex w-full items-center justify-between">
-							<Image src={logo} width="100" alt="/"></Image>
-							<div
-								onClick={handleNav}
-								className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
-							>
-								<AiOutlineClose />
+							<Image src={logo} width="125" alt="/"></Image>
+							<div onClick={handleNav} className=" p-3 cursor-pointer">
+								<AiOutlineClose size={20} />
 							</div>
 						</div>
 						{/* <div className="border-b border-gray-300 my-4">
@@ -107,7 +104,7 @@ const navBar = ({ navHome }) => {
 							</p>
 						</div> */}
 					</div>
-					<div className="py-4 flex-col">
+					<div className="py-4  flex-col">
 						<ul className="uppercase font-bold">
 							<Link href="/">
 								<li className="py-4 text-sm">Accueil</li>
