@@ -9,7 +9,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 import logo from "../public/logo.png"
 
-const NavBar = ({ navHome }) => {
+const NavBar = () => {
 	// detection page active pour Style Nav
 	const router = useRouter()
 	const currentRoute = router.pathname
@@ -26,16 +26,18 @@ const NavBar = ({ navHome }) => {
 	return (
 		<div
 			className={`fixed w-full h-20  z-[100]  ease-in duration-300 ${
-				navHome && scrollPosition === 0 ? "" : "bg-white shadow-xl"
+				currentRoute === "/" && scrollPosition === 0 ? "" : "bg-white shadow-xl"
 			}`}
 			id="navbar"
 		>
 			<div
 				className={`flex  items-center w-full h-full px-2 2xl:px-16 ${
-					navHome && scrollPosition === 0 ? "justify-end" : "justify-between"
+					currentRoute === "/" && scrollPosition === 0
+						? "justify-end"
+						: "justify-between"
 				}`}
 			>
-				{navHome && scrollPosition === 0 ? (
+				{currentRoute === "/" && scrollPosition === 0 ? (
 					""
 				) : (
 					<Image src={logo} width="130" alt="Logo Cigale Construction"></Image>

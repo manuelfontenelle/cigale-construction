@@ -21,7 +21,7 @@ export default function Home() {
 				<meta name="description" content="Cigale Construction" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<NavBar navHome="navHome" />
+			<NavBar />
 			<main className=" ">
 				<section className="min-h-screen w-full h-full overflow-hidden bg-intro-bg bg-cover bg-no-repeat bg-left md:bg-[center]">
 					<div className="flex justify-center items-center min-h-screen px-8">
