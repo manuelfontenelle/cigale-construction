@@ -15,6 +15,9 @@ module.exports = {
 				poppins: ["Poppins", "sans-serif"],
 				// google fonts
 			},
+			backgroundImage: {
+				"intro-bg": "url('../public/intro_bg.jpg')",
+			},
 		},
 	},
 	plugins: [],

@@ -1,44 +1,46 @@
 // rafce == >  type for create react app snipper
+import useScrollPosition from "../hooks/useScrollPosition"
 import Image from "next/image"
 import Link from "next/link"
 import { useRouter } from "next/router"
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai"
 import { BsFillPersonLinesFill } from "react-icons/bs"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 import logo from "../public/logo.png"
 
 const navBar = ({ navHome }) => {
+	// detection page active pour Style Nav
 	const router = useRouter()
 	const currentRoute = router.pathname
+	//
+	const scrollPosition = useScrollPosition()
+	// console.log(scrollPosition)
 
 	const [nav, setNav] = useState(false)
-	const [pos, setPos] = useState(false)
 
 	const handleNav = () => {
 		setNav(!nav)
 	}
 
-	useEffect(() => {
-		document.addEventListener("scroll", (e) => {
-			let scrolled = document.scrollingElement.scrollTop
-			if (scrolled >= 5) {
-				setPos(false)
-			} else {
-				setPos(true)
-			}
-		})
-	}, [])
-
 	return (
 		<div
 			className={`fixed w-full h-20  z-[100]  ease-in duration-300 ${
-				navHome && pos === true ? "" : "bg-white shadow-xl"
+				navHome && scrollPosition === 0 ? "" : "bg-white shadow-xl"
 			}`}
 			id="navbar"
 		>
-			<div className="flex justify-between items-center w-full h-full  px-2 2xl:px-16">
-				<Image src={logo} width="120" alt="Logo Cigale Construction"></Image>
+			<div
+				className={`flex  items-center w-full h-full px-2 2xl:px-16 ${
+					navHome && scrollPosition === 0 ? "justify-end" : "justify-between"
+				}`}
+			>
+				{navHome && scrollPosition === 0 ? (
+					""
+				) : (
+					<Image src={logo} width="130" alt="Logo Cigale Construction"></Image>
+				)}
+
 				<div>
 					<ul className="hidden font-bold text-[#0f0f0f] md:flex">
 						<Link
