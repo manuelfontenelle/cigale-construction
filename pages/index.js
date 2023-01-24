@@ -2,7 +2,7 @@ import Head from "next/head"
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import Slider from "../components/Slider"
-
+import "flowbite"
 // import {
 // 	AiFillTwitterCircle,
 // 	AiFillLinkedin,
@@ -15,13 +15,13 @@ import Image from "next/image"
 import logo from "../public/logo.png"
 
 export default function Home() {
-	// const [darkMode, setDarkMode] = useState(false)
-	useEffect(() => {
-		const use = async () => {
-			;(await import("tw-elements")).default
-		}
-		use()
-	}, [])
+	// 	// const [darkMode, setDarkMode] = useState(false)
+	// 	useEffect(() => {
+	// 		const use = async () => {
+	// 			;(await import("tw-elements")).default
+	// 		}
+	// 		use()
+	// 	}, [])
 
 	return (
 		<div>
