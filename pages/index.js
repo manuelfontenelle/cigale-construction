@@ -1,8 +1,13 @@
 import Head from "next/head"
+// import "flowbite"
+
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import Slider from "../components/Slider"
-import "flowbite"
+import Slider2 from "../components/Slider2"
+import Slider3 from "../components/Slider3"
+import Slider4 from "../components/Slider4"
+
 // import {
 // 	AiFillTwitterCircle,
 // 	AiFillLinkedin,
@@ -21,12 +26,12 @@ import slide5 from "../public/slide5.jpg"
 
 export default function Home() {
 	// 	// const [darkMode, setDarkMode] = useState(false)
-	// 	useEffect(() => {
-	// 		const use = async () => {
-	// 			;(await import("tw-elements")).default
-	// 		}
-	// 		use()
-	// 	}, [])
+	useEffect(() => {
+		const use = async () => {
+			;(await import("tw-elements")).default
+		}
+		use()
+	}, [])
 
 	return (
 		<div>
@@ -76,7 +81,7 @@ export default function Home() {
 							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
 								Lorem Ipsum
 							</h2>
-							<Slider
+							<Slider2
 								slide1={slide3}
 								slide2={slide4}
 								slide3={slide1}
@@ -94,7 +99,7 @@ export default function Home() {
 							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
 								Lorem Ipsum
 							</h2>
-							<Slider
+							<Slider3
 								slide1={slide2}
 								slide5={slide5}
 								slide2={slide3}
@@ -112,11 +117,11 @@ export default function Home() {
 							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
 								Lorem Ipsum
 							</h2>
-							<Slider
+							<Slider4
 								slide1={slide1}
 								slide2={slide2}
 								slide3={slide3}
-								slide4={slide4}
+								// slide4={slide4}
 								// slide4={slide4}
 							/>
 							<p className=" text-white font-light text-reg mt-10 leading-7">
