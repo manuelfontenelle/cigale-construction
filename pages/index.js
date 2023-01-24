@@ -2,7 +2,7 @@ import Head from "next/head"
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import Slider from "../components/Slider"
-// import "tw-elements"
+
 // import {
 // 	AiFillTwitterCircle,
 // 	AiFillLinkedin,
@@ -46,7 +46,7 @@ export default function Home() {
 							<h2 className=" text-[#c3a079] font-semibold text-lg mb-3">
 								Lorem Ipsum
 							</h2>
-							{/* <Slider /> */}
+							<Slider />
 							<p className=" text-white font-light text-sm py-3 leading-6">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy

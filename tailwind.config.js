@@ -21,6 +21,6 @@ module.exports = {
 			},
 		},
 	},
-	plugin: [],
-	// plugins: [require("tw-elements/dist/plugin")],
+	// plugin: [],
+	plugins: [require("tw-elements/dist/plugin")],
 }
