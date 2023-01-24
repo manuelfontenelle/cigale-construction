@@ -47,7 +47,7 @@ export default function Home() {
 						<Image src={logo} alt="Logo Cigale Construction" width={700} />
 					</div>
 				</section>
-				<section className=" py-10 bg-[#0f0f0f] px-10 md:px-20 lg:px-40">
+				<section className=" py-10 bg-[#0f0f0f] px-10 md:px-20 xl:px-40">
 					<div className="my-10">
 						<h1 className=" text-white font-bold uppercase text-center text-3xl">
 							Projets réalisés
@@ -55,10 +55,7 @@ export default function Home() {
 						<span className="w-20 h-1 mt-2 bg-[#c3a079] block mx-auto text-center"></span>
 					</div>
 
-					<div
-						className="flex flex-col gap-20 py-10 lg:flex-row lg:flex-wrap"
-						height="100%"
-					>
+					<div className="flex flex-col gap-20 py-10 lg:flex-row lg:flex-wrap">
 						<div className="basis-1/3 flex-1">
 							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
 								Lorem Ipsum
@@ -70,7 +67,7 @@ export default function Home() {
 								slide4={slide4}
 								slide5={slide5}
 							/>
-							<p className=" text-white font-light text-reg mt-10 leading-7">
+							<p className=" text-white font-light text-reg mt-5 leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley
@@ -88,7 +85,7 @@ export default function Home() {
 								slide4={slide2}
 								slide5={slide5}
 							/>
-							<p className=" text-white font-light text-reg mt-10 leading-7">
+							<p className=" text-white font-light text-reg mt-5 leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley
@@ -106,7 +103,7 @@ export default function Home() {
 								slide3={slide4}
 								slide4={slide1}
 							/>
-							<p className=" text-white font-light text-reg mt-10 leading-7">
+							<p className=" text-white font-light text-reg mt-5 leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley
@@ -124,7 +121,7 @@ export default function Home() {
 								// slide4={slide4}
 								// slide4={slide4}
 							/>
-							<p className=" text-white font-light text-reg mt-10 leading-7">
+							<p className=" text-white font-light text-reg mt-5 leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley
