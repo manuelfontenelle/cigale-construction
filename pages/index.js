@@ -4,9 +4,6 @@ import Head from "next/head"
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import Slider from "../components/Slider"
-import Slider2 from "../components/Slider2"
-import Slider3 from "../components/Slider3"
-import Slider4 from "../components/Slider4"
 
 // import {
 // 	AiFillTwitterCircle,
@@ -61,6 +58,7 @@ export default function Home() {
 								Lorem Ipsum
 							</h2>
 							<Slider
+								number="number1"
 								slide1={slide1}
 								slide2={slide2}
 								slide3={slide3}
@@ -78,7 +76,8 @@ export default function Home() {
 							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
 								Lorem Ipsum
 							</h2>
-							<Slider2
+							<Slider
+								number="number2"
 								slide1={slide3}
 								slide2={slide4}
 								slide3={slide1}
@@ -96,7 +95,8 @@ export default function Home() {
 							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
 								Lorem Ipsum
 							</h2>
-							<Slider3
+							<Slider
+								number="number3"
 								slide1={slide2}
 								slide5={slide5}
 								slide2={slide3}
@@ -114,7 +114,8 @@ export default function Home() {
 							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
 								Lorem Ipsum
 							</h2>
-							<Slider4
+							<Slider
+								number="number4"
 								slide1={slide1}
 								slide2={slide2}
 								slide3={slide3}
