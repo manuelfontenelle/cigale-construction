@@ -3,11 +3,15 @@
 $primary-color: #64ff00;
 $secondary-color: rgb(70, 70, 223);
 
-h2 {
-	color: $primary-color;
-	@include lg {
-		color: $secondary-color;
-	}
+// h2 {
+// 	color: $primary-color;
+// 	@include lg {
+// 		color: $secondary-color;
+// 	}
+// }
+
+.image {
+	height: 100% !important;
 }
 
 .borderBottomCustom {

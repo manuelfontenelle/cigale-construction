@@ -15,7 +15,7 @@ const NavBar = () => {
 	const currentRoute = router.pathname
 	//
 	const scrollPosition = useScrollPosition()
-	console.log(scrollPosition)
+	// console.log(scrollPosition)
 
 	const [nav, setNav] = useState(false)
 

@@ -27,14 +27,7 @@ a {
 * {
 	box-sizing: border-box;
 }
-@font-face {
+/* @font-face {
 	font-family: "burtons";
 	src: url("../public/Burtons.otf");
-}
-
-/* .image-container {
-	width: 100%;
 } */
-.image {
-	height: 100% !important;
-}
