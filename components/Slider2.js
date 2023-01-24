@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image"
 
-const Slider2 = ({ slide1, slide2, slide3, slide4, slide5 }) => {
+const Slider = ({ slide1, slide2, slide3, slide4, slide5 }) => {
 	return (
 		<div
 			id="carouselExampleIndicators2"
@@ -123,4 +123,4 @@ const Slider2 = ({ slide1, slide2, slide3, slide4, slide5 }) => {
 	)
 }
 
-export default Slider2
+export default Slider

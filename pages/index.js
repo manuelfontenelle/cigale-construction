@@ -47,8 +47,8 @@ export default function Home() {
 						<Image src={logo} alt="Logo Cigale Construction" width={700} />
 					</div>
 				</section>
-				<section className=" py-10 bg-[#0f0f0f] px-10 md:px-20 xl:px-40">
-					<div className="my-10">
+				<section className=" py-10 bg-[#0f0f0f] px-5 md:px-20 xl:px-40">
+					<div className="my-6">
 						<h1 className=" text-white font-bold uppercase text-center text-3xl">
 							Projets réalisés
 						</h1>

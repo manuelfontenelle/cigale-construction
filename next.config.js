@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-// const path = require("path")
+const path = require("path")
 
 const nextConfig = {
 	reactStrictMode: true,
@@ -10,9 +10,9 @@ const nextConfig = {
 module.exports = {
 	nextConfig,
 
-	// sassOptions: {
-	// 	includePaths: [path.join(__dirname, "styles")],
-	// },
+	sassOptions: {
+		includePaths: [path.join(__dirname, "styles")],
+	},
 
 	images: {
 		unoptimized: true,
