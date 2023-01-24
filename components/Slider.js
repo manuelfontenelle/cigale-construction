@@ -1,5 +1,5 @@
 import React from "react"
-import "tw-elements"
+
 import Image from "next/image"
 import picture from "../public/intro_bg.jpg"
 
