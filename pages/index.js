@@ -10,12 +10,19 @@ import Slider from "../components/Slider"
 // 	AiFillYoutube,
 // } from "react-icons/ai"
 // import { BsFillMoonStarsFill } from "react-icons/bs"
-import { useState } from "react"
+import { useEffect } from "react"
 import Image from "next/image"
 import logo from "../public/logo.png"
 
 export default function Home() {
 	// const [darkMode, setDarkMode] = useState(false)
+
+	useEffect(() => {
+		const use = async () => {
+			;(await import("tw-elements")).default
+		}
+		use()
+	}, [])
 
 	return (
 		<div>
