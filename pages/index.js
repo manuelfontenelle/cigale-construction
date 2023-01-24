@@ -13,6 +13,11 @@ import { useEffect } from "react"
 
 import Image from "next/image"
 import logo from "../public/logo.png"
+import slide1 from "../public/slide1.jpg"
+import slide2 from "../public/slide2.jpg"
+import slide3 from "../public/slide3.jpg"
+import slide4 from "../public/slide4.jpg"
+import slide5 from "../public/slide5.jpg"
 
 export default function Home() {
 	// 	// const [darkMode, setDarkMode] = useState(false)
@@ -38,23 +43,29 @@ export default function Home() {
 					</div>
 				</section>
 				<section className=" py-10 bg-[#0f0f0f] px-10 md:px-20 lg:px-40">
-					<div className="mb-10">
-						<h1 className=" text-white font-bold uppercase text-center text-2xl">
+					<div className="my-10">
+						<h1 className=" text-white font-bold uppercase text-center text-3xl">
 							Projets réalisés
 						</h1>
 						<span className="w-20 h-1 mt-2 bg-[#c3a079] block mx-auto text-center"></span>
 					</div>
 
 					<div
-						className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap"
+						className="flex flex-col gap-20 py-10 lg:flex-row lg:flex-wrap"
 						height="100%"
 					>
 						<div className="basis-1/3 flex-1">
-							<h2 className=" text-[#c3a079] font-semibold text-lg mb-3">
+							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
 								Lorem Ipsum
 							</h2>
-							<Slider />
-							<p className=" text-white font-light text-sm py-3 leading-6">
+							<Slider
+								slide1={slide1}
+								slide2={slide2}
+								slide3={slide3}
+								slide4={slide4}
+								slide5={slide5}
+							/>
+							<p className=" text-white font-light text-reg mt-10 leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley
@@ -62,30 +73,17 @@ export default function Home() {
 							</p>
 						</div>
 						<div className="basis-1/3 flex-1">
-							<h2 className=" text-[#c3a079] font-semibold text-lg mb-3">
+							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
 								Lorem Ipsum
 							</h2>
-							<div className=" relative h-[400px]">
-								<Image className="rounded-lg object-cover image" src={""} />
-							</div>
-							<p className=" text-white font-light text-sm py-3 leading-6">
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s, when an unknown printer took a galley
-								of type and scrambled it to make a type specimen book. Lorem
-								Ipsum has been the industry's standard dummy text ever since the
-								1500s, when an unknown printer took a galley of type and
-								scrambled it to make a type specimen book.
-							</p>
-						</div>
-						<div className="basis-1/3 flex-1">
-							<h2 className=" text-[#c3a079] font-semibold text-lg mb-3">
-								Lorem Ipsum
-							</h2>
-							<div className=" relative h-[400px]">
-								<Image className="rounded-lg object-cover image" src={""} />
-							</div>
-							<p className=" text-white font-light text-sm py-3 leading-6">
+							<Slider
+								slide1={slide3}
+								slide2={slide4}
+								slide3={slide1}
+								slide4={slide2}
+								slide5={slide5}
+							/>
+							<p className=" text-white font-light text-reg mt-10 leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley
@@ -93,13 +91,35 @@ export default function Home() {
 							</p>
 						</div>
 						<div className="basis-1/3 flex-1">
-							<h2 className=" text-[#c3a079] font-semibold text-lg mb-3">
+							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
 								Lorem Ipsum
 							</h2>
-							<div className=" relative h-[400px]">
-								<Image className="rounded-lg object-cover image" src={""} />
-							</div>
-							<p className=" text-white font-light text-sm py-3 leading-6">
+							<Slider
+								slide1={slide2}
+								slide5={slide5}
+								slide2={slide3}
+								slide3={slide4}
+								slide4={slide1}
+							/>
+							<p className=" text-white font-light text-reg mt-10 leading-7">
+								Lorem Ipsum is simply dummy text of the printing and typesetting
+								industry. Lorem Ipsum has been the industry's standard dummy
+								text ever since the 1500s, when an unknown printer took a galley
+								of type and scrambled it to make a type specimen book.
+							</p>
+						</div>
+						<div className="basis-1/3 flex-1">
+							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
+								Lorem Ipsum
+							</h2>
+							<Slider
+								slide1={slide1}
+								slide2={slide2}
+								slide3={slide3}
+								slide4={slide4}
+								// slide4={slide4}
+							/>
+							<p className=" text-white font-light text-reg mt-10 leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley
