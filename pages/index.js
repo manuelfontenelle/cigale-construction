@@ -1,5 +1,6 @@
 import Head from "next/head"
-
+import dynamic from "next/dynamic"
+const {} = dynamic(import("tw-elements"), { ssr: false })
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import Slider from "../components/Slider"
@@ -16,13 +17,6 @@ import logo from "../public/logo.png"
 
 export default function Home() {
 	// const [darkMode, setDarkMode] = useState(false)
-
-	useEffect(() => {
-		const use = async () => {
-			;(await import("tw-elements")).default
-		}
-		use()
-	}, [])
 
 	return (
 		<div>
