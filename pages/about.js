@@ -69,7 +69,7 @@ const about = () => {
 							alt="Kevin allegre"
 						/>
 						<div className="flex-1 xl:pr-40">
-							<h2 className="text-white text-3xl font-bold">Kevin Allegre</h2>
+							<h2 className="text-white text-3xl font-bold">Kévin Allegre</h2>
 							<p className=" text-white font-reg text-sm mt-5 leading-6 md:text-reg md:leading-7 ">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
