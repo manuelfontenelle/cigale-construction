@@ -64,7 +64,7 @@ const about = () => {
 				<section className="pb-20 px-5 md:px-20 xl:px-40">
 					<div className="flex flex-col gap-10  xl:flex-row xl:items-end">
 						<Image
-							className=" block w-[50%] object-cover xl:basis-1/4 xl:h-[300px] xl:w-full"
+							className=" block w-full object-cover  sm:h-[350px] xl:basis-1/4 xl:h-[300px] xl:w-full"
 							src={slide1}
 							alt="Kevin allegre"
 						/>
