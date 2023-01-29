@@ -69,7 +69,7 @@ export default function Home() {
 								slide4={slide4}
 								slide5={slide5}
 							/>
-							<p className=" text-white font-light text-reg mt-5 leading-7">
+							<p className=" text-white font-light text-sm mt-5 leading-6 md:text-reg md:leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley
@@ -88,7 +88,7 @@ export default function Home() {
 								slide4={slide2}
 								slide5={slide5}
 							/>
-							<p className=" text-white font-light text-reg mt-5 leading-7">
+							<p className=" text-white font-light text-sm mt-5 leading-6 md:text-reg md:leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley
@@ -107,7 +107,7 @@ export default function Home() {
 								slide3={slide4}
 								slide4={slide1}
 							/>
-							<p className=" text-white font-light text-reg mt-5 leading-7">
+							<p className=" text-white font-light text-sm mt-5 leading-6 md:text-reg md:leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley
@@ -126,7 +126,7 @@ export default function Home() {
 								// slide4={slide4}
 								// slide4={slide4}
 							/>
-							<p className=" text-white font-light text-reg mt-5 leading-7">
+							<p className=" text-white font-reg text-sm mt-5 leading-6 md:text-reg md:leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley

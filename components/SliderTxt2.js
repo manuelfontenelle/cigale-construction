@@ -14,9 +14,9 @@ const SliderTxt2 = () => {
 						class="block w-full"
 						alt="Wild Landscape"
 					/> */}
-					<div className=" w-full text-white px-28 flex flex-col justify-center items-center">
+					<div className=" w-full text-white px-12  flex flex-col justify-center items-center sm:px-28">
 						<span className="pb-2 text-md">John Doe </span>
-						<p className="text-sm text-center">
+						<p className="leading-5 text-xs text-center sm:text-sm sm:leading-6">
 							Lorem Ipsum is simply dummy text of the printing and typesetting
 							industry. Lorem Ipsum has been the industry's standard dummy text
 							ever since the 1500s, when an unknown printer took a galley of
@@ -25,9 +25,9 @@ const SliderTxt2 = () => {
 					</div>
 				</div>
 				<div className="carousel-item relative float-left w-full">
-					<div className=" w-full text-white px-28 flex flex-col justify-center items-center">
+					<div className=" w-full text-white px-12  flex flex-col justify-center items-center sm:px-28">
 						<span className="pb-2 text-md">John Doe 2</span>
-						<p className="text-sm text-center">
+						<p className="leading-5 text-xs text-center sm:text-sm sm:leading-6">
 							Lorem Ipsum is simply dummy text of the printing and typesetting
 							industry. Lorem Ipsum has been the industry's standard dummy text
 							ever since the 1500s, when an unknown printer took a galley of
@@ -37,9 +37,9 @@ const SliderTxt2 = () => {
 					</div>
 				</div>
 				<div className="carousel-item relative float-left w-full">
-					<div className=" w-full text-white px-28 flex flex-col justify-center items-center">
+					<div className=" w-full text-white px-12  flex flex-col justify-center items-center sm:px-28">
 						<span className="pb-2 text-md">John Doe 3</span>
-						<p className="text-sm text-center">
+						<p className="leading-5 text-xs text-center sm:text-sm sm:leading-6">
 							Lorem Ipsum is simply dummy text of the printing and typesetting
 							industry. Lorem Ipsum has been the industry's standard dummy text
 							ever since the 1500s, when an unknown printer took a galley of
