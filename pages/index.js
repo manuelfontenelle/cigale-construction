@@ -4,6 +4,8 @@ import Head from "next/head"
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import Slider from "../components/Slider"
+import SliderTxt from "../components/SliderTxt"
+import SliderTxt2 from "../components/SliderTxt2"
 
 // import {
 // 	AiFillTwitterCircle,
@@ -20,6 +22,8 @@ import slide2 from "../public/slide2.jpg"
 import slide3 from "../public/slide3.jpg"
 import slide4 from "../public/slide4.jpg"
 import slide5 from "../public/slide5.jpg"
+import ratesIcon from "../public/rates-icon.svg"
+import archiIcon from "../public/archi-icon.svg"
 
 export default function Home() {
 	// 	// const [darkMode, setDarkMode] = useState(false)
@@ -31,14 +35,14 @@ export default function Home() {
 	}, [])
 
 	return (
-		<div>
+		<div className="relative">
 			<Head>
 				<title>Cigale Construction</title>
 				<meta name="description" content="Cigale Construction" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<NavBar />
-			<main className=" ">
+			<main>
 				<section className="min-h-screen w-full h-full overflow-hidden bg-intro-bg bg-cover bg-no-repeat bg-left md:bg-[center]">
 					<div className="flex justify-center items-center min-h-screen px-8">
 						<Image src={logo} alt="Logo Cigale Construction" width={700} />
@@ -49,7 +53,7 @@ export default function Home() {
 						<h1 className=" text-white font-bold uppercase text-center text-3xl">
 							Projets réalisés
 						</h1>
-						<span className="w-20 h-1 mt-2 bg-[#c3a079] block mx-auto text-center"></span>
+						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block mx-auto text-center"></span>
 					</div>
 
 					<div className="flex flex-col gap-20 py-10 lg:flex-row lg:flex-wrap">
@@ -129,6 +133,35 @@ export default function Home() {
 								of type and scrambled it to make a type specimen book.
 							</p>
 						</div>
+					</div>
+				</section>
+
+				<section className=" bg-[#0f0f0f] px-5 flex flex-col gap-16 pt-5 pb-24  lg:flex-row lg:flex-wrap md:px-20 xl:px-40">
+					<div className="h-[430px]  md:flex-1 ">
+						<Image
+							src={ratesIcon}
+							alt="Témoignages clients"
+							width={80}
+							className="fill-white  mx-auto mb-3"
+						/>
+						<h1 className=" text-white font-bold uppercase text-center text-3xl">
+							Témoignages clients
+						</h1>
+						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block mx-auto text-center"></span>
+						<SliderTxt />
+					</div>
+					<div className=" h-[430px] md:flex-1">
+						<Image
+							src={archiIcon}
+							alt="Témoignages Architectes"
+							width={80}
+							className="fill-white  mx-auto mb-3"
+						/>
+						<h1 className=" text-white font-bold uppercase text-center text-3xl">
+							Témoignages architectes
+						</h1>
+						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block mx-auto text-center"></span>
+						<SliderTxt2 />
 					</div>
 				</section>
 			</main>

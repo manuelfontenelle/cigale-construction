@@ -8,7 +8,7 @@ const Footer = () => {
 	// }, [])
 
 	return (
-		<div className="flex justify-center items-center w-full bottom-0 h-10 bg-white">
+		<div className="absolute flex justify-center items-center w-full bottom-0 h-10 bg-white">
 			<div className=" text-xs uppercase   py-1 font-semibold">
 				&copy; copyright {getYear()} - Cigale Construction
 			</div>
