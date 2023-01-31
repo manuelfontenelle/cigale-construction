@@ -1,6 +1,6 @@
 @import "mixins";
 
-$primary-color: #64ff00;
+$primary-color: #c3a079;
 $secondary-color: rgb(70, 70, 223);
 
 // h2 {
@@ -39,4 +39,21 @@ $secondary-color: rgb(70, 70, 223);
 			width: 100%;
 		}
 	}
+}
+.datepicker-header {
+	background-color: #c3a079 !important;
+}
+.datepicker-footer-btn {
+	color: #c3a079 !important;
+}
+.datepicker-cell.selected .datepicker-cell-content {
+	background-color: #c3a079 !important;
+}
+.datepicker-backdrop {
+	background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.datepicker-toggle-button:hover,
+.datepicker-toggle-button:active,
+.datepicker-toggle-button:focus {
+	color: #c3a079 !important;
 }

@@ -62,8 +62,8 @@ const NavBar = () => {
 							</li>
 						</Link>
 						<Link
-							href="/estimate"
-							className={currentRoute === "/estimate" ? "active" : "nonActive"}
+							href="/contact"
+							className={currentRoute === "/contact" ? "active" : "nonActive"}
 						>
 							<li className="ml-10 text-sm uppercase borderBottomCustom">
 								Demander une estimation
