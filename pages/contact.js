@@ -46,8 +46,8 @@ const contact = () => {
 						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block text-center"></span>
 					</div>
 					<div className="flex flex-col gap-10  xl:flex-row xl:items-start">
-						<div className=" block w-full object-cover  xl:w-[40%] ">
-							<p className=" text-white font-reg text-sm my-4 leading-6 md:text-reg md:leading-7 xl:pr-40">
+						<div className=" block w-full object-cover  xl:w-[50%] ">
+							<p className=" text-white font-reg text-sm my-4 leading-6 md:text-reg md:leading-7 xl:pr-80">
 								Afin de mieux vous servir, aidez-nous à vous aiguillez vers le
 								bon représentant en répondant aux questions suivantes :
 							</p>

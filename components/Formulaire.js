@@ -1,15 +1,22 @@
 import React from "react"
+import { useState } from "react"
+import DatePicker from "react-datepicker"
+import "react-datepicker/dist/react-datepicker.css"
+import { registerLocale, setDefaultLocale } from "react-datepicker"
+import fr from "date-fns/locale/fr"
+registerLocale("fr", fr)
 
 const Formulaire = () => {
+	const [startDate, setStartDate] = useState(new Date())
 	return (
 		<div>
-			<div class="block rounded-lg shadow-lg bg-[#0f0f0f] max-w-lg">
+			<div className="block rounded-lg shadow-lg bg-[#0f0f0f] max-w-lg">
 				<form>
-					<div class="grid grid-cols-2 gap-4">
-						<div class="form-group mb-6">
+					<div className="grid grid-cols-2 gap-4">
+						<div className="form-group mb-6">
 							<input
 								type="text"
-								class="form-control
+								className="form-control
           block
           w-full
           px-3
@@ -29,10 +36,10 @@ const Formulaire = () => {
 								placeholder="Prénom"
 							/>
 						</div>
-						<div class="form-group mb-6">
+						<div className="form-group mb-6">
 							<input
 								type="text"
-								class="form-control
+								className="form-control
           block
           w-full
           px-3
@@ -54,16 +61,10 @@ const Formulaire = () => {
 						</div>
 					</div>
 
-					<div class="form-group mb-6">
-						{/* <label
-							for="exampleTel0"
-							class="form-label inline-block mb-2 text-gray-700"
-						>
-							Phone input
-						</label> */}
+					<div className="form-group mb-6">
 						<input
 							type="tel"
-							class="
+							className="
         form-control
         block
         w-full
@@ -85,10 +86,10 @@ const Formulaire = () => {
 						/>
 					</div>
 
-					<div class="form-group mb-6">
+					<div className="form-group mb-6">
 						<input
 							type="email"
-							class="form-control block
+							className="form-control block
        w-full
        px-3
        py-1.5
@@ -106,9 +107,9 @@ const Formulaire = () => {
 							placeholder="Email"
 						/>
 					</div>
-					<div class="form-group mb-6">
+					<div className="form-group mb-6">
 						<textarea
-							class="
+							className="
        form-control
        block
        w-full
@@ -130,9 +131,9 @@ const Formulaire = () => {
 							placeholder="Votre adresse..."
 						></textarea>
 					</div>
-					<div class="form-group mb-6">
+					<div className="form-group mb-6">
 						<textarea
-							class="
+							className="
        form-control
        block
        w-full
@@ -155,31 +156,17 @@ const Formulaire = () => {
 						></textarea>
 					</div>
 
-					{/* <div class="form-group form-check text-center mb-6">
-						<input
-							type="checkbox"
-							class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
-							id="exampleCheck87"
-						/>
-						<label
-							class="form-check-label inline-block text-gray-800"
-							for="exampleCheck87"
-						>
-							S'abonner à la newletter
-						</label>
-					</div> */}
-
 					{/* Début piece jointe */}
-					<div class="flex justify-center my-5">
-						<div class="mb-3 w-96">
+					<div className="flex justify-center my-5">
+						<div className="mb-3 w-96">
 							<label
-								for="formFileMultiple"
-								class="form-label inline-block mb-2 text-gray-400"
+								htmlFor="formFileMultiple"
+								className="form-label inline-block mb-2 text-gray-400"
 							>
 								Joindre un fichier :
 							</label>
 							<input
-								class="form-control
+								className="form-control
     block
     w-full
     px-3
@@ -201,32 +188,58 @@ const Formulaire = () => {
 						</div>
 					</div>
 					{/* Fin piece jointe */}
+					<div className="flex justify-center my-5">
+						<div className="mb-3 w-96">
+							<label htmlFor="floatingInput" className="text-gray-400">
+								Sélectionner une date :
+							</label>
+							<DatePicker
+								selected={startDate}
+								className="block w-full mt-2 px-3 py-1.5 text-base font-normal text-gray-400 bg-[#0f0f0f] bg-clip-padding border border-solid border-gray-700 rounded transition ease-in-out m-0 focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none"
+								onChange={(date) => setStartDate(date)}
+								locale="fr"
+							/>
+						</div>
+					</div>
 
-					<div class="flex items-center justify-center">
+					{/* <div className="flex items-center justify-center">
 						<div
-							class="datepicker relative form-floating mb-3 xl:w-96"
+							className="datepicker relative form-floating mb-3 xl:w-96"
 							data-mdb-toggle-button="false"
 						>
 							<input
 								type="text"
-								class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-400 bg-[#0f0f0f] bg-clip-padding border border-solid border-gray-700 rounded transition ease-in-out m-0 focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none"
+								className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-400 bg-[#0f0f0f] bg-clip-padding border border-solid border-gray-700 rounded transition ease-in-out m-0 focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none"
 								placeholder="Select a date"
 							/>
-							<label for="floatingInput" class="text-gray-400">
+							<label htmlFor="floatingInput" className="text-gray-400">
 								Sélectionner une date
 							</label>
 							<button
-								class="datepicker-toggle-button"
+								className="datepicker-toggle-button"
 								data-mdb-toggle="datepicker"
 							>
-								<i class="fas fa-calendar datepicker-toggle-icon"></i>
+								<i className="fas fa-calendar datepicker-toggle-icon"></i>
 							</button>
 						</div>
-					</div>
+					</div> */}
+
+					{/* <div class="flex items-center justify-center">
+						<div class="datepicker relative form-floating mb-3 xl:w-96">
+							<input
+								type="text"
+								class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+								placeholder="Select a date"
+							/>
+							<label for="floatingInput" class="text-gray-700">
+								Select a date
+							</label>
+						</div>
+					</div> */}
 
 					<button
 						type="submit"
-						class="
+						className="
      w-full
      px-6
      py-4

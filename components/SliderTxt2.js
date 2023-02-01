@@ -6,6 +6,7 @@ const SliderTxt2 = () => {
 			id="carouselExampleControls2"
 			className="carousel slide relative"
 			data-bs-ride="carousel"
+			data-bs-interval="false"
 		>
 			<div className="carousel-inner relative w-full my-5  overflow-hidden">
 				<div className="carousel-item active relative float-left w-full">

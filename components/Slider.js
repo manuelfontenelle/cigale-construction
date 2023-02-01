@@ -7,6 +7,7 @@ const Slider = ({ number, slide1, slide2, slide3, slide4, slide5 }) => {
 			id={`carouselExampleIndicators${number}`}
 			className="carousel slide relative"
 			data-bs-ride="carousel"
+			data-bs-interval="false"
 		>
 			<div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
 				<button

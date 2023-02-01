@@ -3,13 +3,13 @@ import React from "react"
 const Formulaire = () => {
 	return (
 		<div>
-			<div class="block rounded-lg shadow-lg bg-[#0f0f0f] max-w-lg">
+			<div className="block rounded-lg shadow-lg bg-[#0f0f0f] max-w-lg">
 				<form>
-					<div class="grid grid-cols-2 gap-4">
-						<div class="form-group mb-6">
+					<div className="grid grid-cols-2 gap-4">
+						<div className="form-group mb-6">
 							<input
 								type="text"
-								class="form-control
+								className="form-control
           block
           w-full
           px-3
@@ -29,10 +29,10 @@ const Formulaire = () => {
 								placeholder="Prénom"
 							/>
 						</div>
-						<div class="form-group mb-6">
+						<div className="form-group mb-6">
 							<input
 								type="text"
-								class="form-control
+								className="form-control
           block
           w-full
           px-3
@@ -54,7 +54,7 @@ const Formulaire = () => {
 						</div>
 					</div>
 
-					<div class="form-group mb-6">
+					<div className="form-group mb-6">
 						{/* <label
 							for="exampleTel0"
 							class="form-label inline-block mb-2 text-gray-700"
@@ -63,7 +63,7 @@ const Formulaire = () => {
 						</label> */}
 						<input
 							type="tel"
-							class="
+							className="
         form-control
         block
         w-full
@@ -85,10 +85,10 @@ const Formulaire = () => {
 						/>
 					</div>
 
-					<div class="form-group mb-6">
+					<div className="form-group mb-6">
 						<input
 							type="email"
-							class="form-control block
+							className="form-control block
        w-full
        px-3
        py-1.5
@@ -106,9 +106,9 @@ const Formulaire = () => {
 							placeholder="Email"
 						/>
 					</div>
-					<div class="form-group mb-6">
+					<div className="form-group mb-6">
 						<textarea
-							class="
+							className="
        form-control
        block
        w-full
@@ -146,16 +146,16 @@ const Formulaire = () => {
 					</div> */}
 
 					{/* Début piece jointe */}
-					<div class="flex justify-center my-5">
-						<div class="mb-3 w-96">
+					<div className="flex justify-center my-5">
+						<div className="mb-3 w-96">
 							<label
-								for="formFileMultiple"
-								class="form-label inline-block mb-2 text-gray-400"
+								htmlFor="formFileMultiple"
+								className="form-label inline-block mb-2 text-gray-400"
 							>
 								Joindre un fichier :
 							</label>
 							<input
-								class="form-control
+								className="form-control
     block
     w-full
     px-3
@@ -202,7 +202,7 @@ const Formulaire = () => {
 
 					<button
 						type="submit"
-						class="
+						className="
      w-full
      px-6
      py-4

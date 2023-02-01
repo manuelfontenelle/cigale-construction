@@ -7,7 +7,9 @@ module.exports = {
 		"./src/**/*.{html,js}",
 		"./node_modules/tw-elements/dist/js/**/*.js",
 
-		// "./node_modules/flowbite/**/*.js",
+		// "./node_modules/flowbite-react/**/*.js",
+		// "./pages/**/*.{ts,tsx}",
+		// "./public/**/*.html",
 	],
 	theme: {
 		extend: {
@@ -26,6 +28,6 @@ module.exports = {
 		},
 	},
 	// plugin: [],
-	// plugins: [require("flowbite/plugin")],
+
 	plugins: [require("tw-elements/dist/plugin")],
 }
