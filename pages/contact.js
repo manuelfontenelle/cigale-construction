@@ -49,7 +49,7 @@ const contact = () => {
 						<div className=" block w-full object-cover  xl:w-[40%] ">
 							<p className=" text-white font-reg text-sm my-4 leading-6 md:text-reg md:leading-7 xl:pr-40">
 								Afin de mieux vous servir, aidez-nous à vous aiguillez vers le
-								bon représentant en répondant aux questions suivantes:
+								bon représentant en répondant aux questions suivantes :
 							</p>
 							<Formulaire />
 						</div>
