@@ -152,7 +152,7 @@ const Formulaire = () => {
 								for="formFileMultiple"
 								class="form-label inline-block mb-2 text-gray-400"
 							>
-								Joindre une pièce jointe
+								Joindre un fichier :
 							</label>
 							<input
 								class="form-control
