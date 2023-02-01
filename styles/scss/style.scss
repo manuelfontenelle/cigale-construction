@@ -1,6 +1,8 @@
 @import "mixins";
 
 $primary-color: #c3a079;
+$primary-color2: #9d7f5e;
+
 $secondary-color: rgb(70, 70, 223);
 
 // h2 {
@@ -51,6 +53,9 @@ $secondary-color: rgb(70, 70, 223);
 }
 .datepicker-backdrop {
 	background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.datepicker-toggle-button {
+	color: #ffff !important;
 }
 .datepicker-toggle-button:hover,
 .datepicker-toggle-button:active,

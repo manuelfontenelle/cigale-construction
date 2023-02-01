@@ -125,33 +125,9 @@ const Formulaire = () => {
        m-0
        focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none
      "
-							id="exampleFormControlTextarea12"
+							id="exampleFormControlTextarea11"
 							rows="3"
-							placeholder="Votre adresse..."
-						></textarea>
-					</div>
-					<div class="form-group mb-6">
-						<textarea
-							class="
-       form-control
-       block
-       w-full
-       px-3
-       py-1.5
-       text-base
-       font-normal
-       text-gray-400
-       bg-[#0f0f0f] bg-clip-padding
-       border border-solid border-gray-700
-       rounded
-       transition
-       ease-in-out
-       m-0
-       focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none
-     "
-							id="exampleFormControlTextarea13"
-							rows="3"
-							placeholder="Description des travaux..."
+							placeholder="Votre message..."
 						></textarea>
 					</div>
 
@@ -202,7 +178,7 @@ const Formulaire = () => {
 					</div>
 					{/* Fin piece jointe */}
 
-					<div class="flex items-center justify-center">
+					{/* <div class="flex items-center justify-center">
 						<div
 							class="datepicker relative form-floating mb-3 xl:w-96"
 							data-mdb-toggle-button="false"
@@ -213,7 +189,7 @@ const Formulaire = () => {
 								placeholder="Select a date"
 							/>
 							<label for="floatingInput" class="text-gray-400">
-								Sélectionner une date
+								Select a date
 							</label>
 							<button
 								class="datepicker-toggle-button"
@@ -222,7 +198,7 @@ const Formulaire = () => {
 								<i class="fas fa-calendar datepicker-toggle-icon"></i>
 							</button>
 						</div>
-					</div>
+					</div> */}
 
 					<button
 						type="submit"

@@ -114,7 +114,7 @@ const NavBar = () => {
 							<Link href="/about">
 								<li className="py-4 text-sm">Qui sommes-nous ?</li>
 							</Link>
-							<Link href="/estimate">
+							<Link href="/contact">
 								<li className="py-4 text-sm">Demander une estimation</li>
 							</Link>
 							<Link href="/career">
