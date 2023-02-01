@@ -157,7 +157,7 @@ const Formulaire = () => {
 					</div>
 
 					{/* Début piece jointe */}
-					<div className="flex justify-center my-5">
+					<div className="flex justify-left my-5">
 						<div className="mb-3 w-96">
 							<label
 								htmlFor="formFileMultiple"
@@ -188,14 +188,17 @@ const Formulaire = () => {
 						</div>
 					</div>
 					{/* Fin piece jointe */}
-					<div className="flex justify-center my-5">
+					<div className="flex justify-left my-5">
 						<div className="mb-3 w-96">
-							<label htmlFor="floatingInput" className="text-gray-400">
+							<label
+								htmlFor="floatingInput"
+								className="text-gray-400 block mb-2"
+							>
 								Sélectionner une date :
 							</label>
 							<DatePicker
 								selected={startDate}
-								className="block w-full mt-2 px-3 py-1.5 text-base font-normal text-gray-400 bg-[#0f0f0f] bg-clip-padding border border-solid border-gray-700 rounded transition ease-in-out m-0 focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none"
+								className="block w-full px-3 py-1.5 text-base font-normal text-gray-400 bg-[#0f0f0f] bg-clip-padding border border-solid border-gray-700 rounded transition ease-in-out m-0 focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none"
 								onChange={(date) => setStartDate(date)}
 								locale="fr"
 							/>
@@ -221,19 +224,6 @@ const Formulaire = () => {
 							>
 								<i className="fas fa-calendar datepicker-toggle-icon"></i>
 							</button>
-						</div>
-					</div> */}
-
-					{/* <div class="flex items-center justify-center">
-						<div class="datepicker relative form-floating mb-3 xl:w-96">
-							<input
-								type="text"
-								class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-								placeholder="Select a date"
-							/>
-							<label for="floatingInput" class="text-gray-700">
-								Select a date
-							</label>
 						</div>
 					</div> */}
 

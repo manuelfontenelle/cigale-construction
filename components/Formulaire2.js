@@ -146,7 +146,7 @@ const Formulaire = () => {
 					</div> */}
 
 					{/* Début piece jointe */}
-					<div className="flex justify-center my-5">
+					<div className="flex justify-left my-5">
 						<div className="mb-3 w-96">
 							<label
 								htmlFor="formFileMultiple"
