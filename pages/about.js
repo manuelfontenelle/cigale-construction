@@ -15,7 +15,7 @@ const about = () => {
 					name="description"
 					content="Cigale Construction - Qui sommes-nous ?"
 				/>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/favicon.png" />
 			</Head>
 			<NavBar />
 			<main className="min-h-screen bg-[#0f0f0f]">

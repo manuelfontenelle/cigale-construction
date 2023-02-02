@@ -7,22 +7,22 @@ import Footer from "../components/Footer"
 import Formulaire2 from "../components/Formulaire2"
 import Image from "next/image"
 import slide1 from "../public/slide1.jpg"
-import illu from "../public/illu.svg"
+import contactImg from "../public/contact.svg"
 
 const career = () => {
-	useEffect(() => {
-		const use = async () => {
-			;(await import("tw-elements")).default
-		}
-		use()
-	}, [])
+	// useEffect(() => {
+	// 	const use = async () => {
+	// 		;(await import("tw-elements")).default
+	// 	}
+	// 	use()
+	// }, [])
 
 	return (
 		<div>
 			<Head>
 				<title>Cigale Construction - Carrière</title>
 				<meta name="description" content="Cigale Construction - Carrière" />
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/favicon.png" />
 			</Head>
 			<NavBar />
 			<main className="min-h-screen bg-[#0f0f0f]">
@@ -43,16 +43,16 @@ const career = () => {
 						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block text-center"></span>
 					</div>
 					<div className="flex flex-col gap-10  xl:flex-row xl:items-start ">
-						<div className=" block w-full object-cover  xl:w-[40%] ">
-							<p className=" text-white font-reg text-sm my-4 leading-6 md:text-reg md:leading-7 xl:pr-40">
+						<div className=" block w-full object-cover  xl:w-[50%] ">
+							<p className=" text-white font-reg text-sm my-4 leading-6 md:text-reg md:leading-7 xl:pr-80">
 								Vous souhaitez nous rejoindre ? Veuillez remplir ce formulaire
 								et nous vous contacteront prochainement :
 							</p>
 							<Formulaire2 />
 						</div>
-						{/* <div className="flex-1 xl:w-full xl:mt-[-50px]">
-							<Image className="w-full" src={illu} alt="Illustration " />
-						</div> */}
+						<div className="flex-1 xl:w-full xl:mt-[-50px]">
+							<Image className="w-full" src={contactImg} alt="Illustration " />
+						</div>
 					</div>
 				</section>
 				<section className="pb-20 px-5 md:px-20 xl:px-40"></section>

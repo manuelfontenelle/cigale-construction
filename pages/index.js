@@ -39,7 +39,7 @@ export default function Home() {
 			<Head>
 				<title>Cigale Construction</title>
 				<meta name="description" content="Cigale Construction" />
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/favicon.png" />
 			</Head>
 			<NavBar />
 			<main>

@@ -10,12 +10,12 @@ import slide1 from "../public/slide1.jpg"
 import illu from "../public/illu.svg"
 
 const contact = () => {
-	useEffect(() => {
-		const use = async () => {
-			;(await import("tw-elements")).default
-		}
-		use()
-	}, [])
+	// useEffect(() => {
+	// 	const use = async () => {
+	// 		;(await import("tw-elements")).default
+	// 	}
+	// 	use()
+	// }, [])
 
 	return (
 		<div>
@@ -25,7 +25,7 @@ const contact = () => {
 					name="description"
 					content="Cigale Construction - Demander une estimation"
 				/>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/favicon.png" />
 			</Head>
 			<NavBar />
 			<main className="min-h-screen bg-[#0f0f0f]">
