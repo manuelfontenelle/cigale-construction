@@ -4,7 +4,7 @@ const SliderTxt2 = () => {
 	return (
 		<div
 			id="carouselExampleControls2"
-			className="carousel slide relative"
+			className="carousel slide relative w-full xl:w-[80%] mx-auto"
 			data-bs-ride="carousel"
 			data-bs-interval="false"
 		>

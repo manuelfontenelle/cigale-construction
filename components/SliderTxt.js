@@ -4,13 +4,13 @@ const SliderTxt = () => {
 	return (
 		<div
 			id="carouselExampleControls"
-			className="carousel slide relative "
+			className="carousel slide relative w-full xl:w-[80%] mx-auto"
 			data-bs-ride="carousel"
 			data-bs-interval="false"
 		>
-			<div className="carousel-inner relative w-full my-5  overflow-hidden">
-				<div className="carousel-item active relative float-left w-full">
-					<div className=" w-full text-white px-12 flex flex-col justify-center items-center sm:px-28">
+			<div className="carousel-inner relative w-full my-5  overflow-hidden ">
+				<div className="carousel-item active relative float-left w-full ">
+					<div className=" w-full text-white px-12 flex flex-col justify-center items-center sm:px-28 ">
 						<span className="pb-2 text-md">John Doe </span>
 						<p className="leading-5 text-xs text-center sm:text-sm sm:leading-6">
 							Lorem Ipsum is simply dummy text of the printing and typesetting
