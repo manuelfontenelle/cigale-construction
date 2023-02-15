@@ -16,6 +16,23 @@ $secondary-color: rgb(70, 70, 223);
 // 	height: 100% !important;
 // }
 
+.btn-form {
+	&.disabled-btn {
+		cursor: wait;
+		opacity: 0.5;
+	}
+}
+
+.disabled-btn {
+	background-color: red;
+	color: white;
+}
+
+.disabled-btn:hover {
+	background-color: red;
+	color: white;
+}
+
 .borderBottomCustom {
 	position: relative;
 	padding: 15px 0px;

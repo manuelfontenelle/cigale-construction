@@ -92,7 +92,7 @@ const Formulaire = () => {
           transition
           ease-in-out
           m-0
-          focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none"
+          focus:text-white focus:bg-black focus:border-[#c3a079] focus:shadow-none focus:outline-none"
 								id="exampleInput123"
 								aria-describedby="emailHelp123"
 								placeholder="Prénom"
@@ -116,7 +116,7 @@ const Formulaire = () => {
           transition
           ease-in-out
           m-0
-          focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none"
+          focus:text-white focus:bg-black focus:border-[#c3a079] focus:shadow-none focus:outline-none"
 								id="exampleInput124"
 								aria-describedby="emailHelp124"
 								placeholder="Nom"
@@ -149,7 +149,7 @@ const Formulaire = () => {
         transition
         ease-in-out
         m-0
-        focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none
+        focus:text-white focus:bg-black focus:border-[#c3a079] focus:shadow-none focus:outline-none
       "
 							id="exampleTel0"
 							placeholder="Téléphone"
@@ -173,7 +173,7 @@ const Formulaire = () => {
        transition
        ease-in-out
        m-0
-       focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none"
+       focus:text-white focus:bg-black focus:border-[#c3a079] focus:shadow-none focus:outline-none"
 							id="exampleInput8"
 							placeholder="Email"
 							onChange={(e) => setEmail(e.target.value)}
@@ -196,7 +196,7 @@ const Formulaire = () => {
        transition
        ease-in-out
        m-0
-       focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none
+       focus:text-white focus:bg-black focus:border-[#c3a079] focus:shadow-none focus:outline-none
      "
 							id="exampleFormControlTextarea11"
 							rows="3"
