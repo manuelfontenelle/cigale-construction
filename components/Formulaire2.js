@@ -1,10 +1,79 @@
 import React from "react"
+import axios from "axios"
+import { useState } from "react"
 
 const Formulaire = () => {
+	const [prenom, setPrenom] = useState("")
+	const [nom, setNom] = useState("")
+	const [phone, setPhone] = useState("")
+	const [email, setEmail] = useState("")
+	const [message, setMessage] = useState("")
+	// const [files, setFiles] = useState("")
+
+	// custom js
+
+	// Fin custom js
+
+	const handleSubmit = async (e) => {
+		e.preventDefault()
+
+		const form = document.querySelector("#contact-form")
+		const submitButton = document.querySelector("#submit-btn")
+		// Fonction pour vider les champs du formulaire :
+		const cleanForm = () => {
+			form.reset()
+		}
+
+		// Fonction pour réactiver le bouton d'envoi du formulaire :
+		const isEnabled = () => {
+			submitButton.removeAttribute("disabled")
+			submitButton.classList.remove("disabled-btn")
+		}
+
+		// Fonction pour désactiver le bouton d'envoi du formulaire :
+		const isDisabled = () => {
+			submitButton.setAttribute("disabled", "disabled")
+			submitButton.classList.add("disabled-btn")
+		}
+
+		isDisabled()
+
+		const data = {
+			email: email,
+			message: message,
+		}
+
+		// console.log(prenom, nom, phone, email, message)
+
+		try {
+			// const response = await axios.post("http://localhost:5000/form", data)
+			const response = await axios.post(
+				"https://nodemailer-perso.herokuapp.com/form",
+				data
+			)
+			// console.log(response)
+
+			if (response.status === 200) {
+				alert("Votre formulaire a bien été envoyé")
+				cleanForm()
+				isEnabled()
+			}
+		} catch (e) {
+			if (e.response.data.error === "Missing parameters") {
+				alert("Veuillez remplir tous les champs du formulaire")
+			} else {
+				alert("Une erreur est survenue")
+				cleanForm()
+			}
+
+			isEnabled()
+		}
+	}
+
 	return (
 		<div>
 			<div className="block rounded-lg shadow-lg bg-[#0f0f0f] max-w-lg">
-				<form>
+				<form id="contact-form" onSubmit={(e) => handleSubmit(e)}>
 					<div className="grid grid-cols-2 gap-4">
 						<div className="form-group mb-6">
 							<input
@@ -27,6 +96,7 @@ const Formulaire = () => {
 								id="exampleInput123"
 								aria-describedby="emailHelp123"
 								placeholder="Prénom"
+								onChange={(e) => setPrenom(e.target.value)}
 							/>
 						</div>
 						<div className="form-group mb-6">
@@ -50,6 +120,7 @@ const Formulaire = () => {
 								id="exampleInput124"
 								aria-describedby="emailHelp124"
 								placeholder="Nom"
+								onChange={(e) => setNom(e.target.value)}
 							/>
 						</div>
 					</div>
@@ -82,6 +153,7 @@ const Formulaire = () => {
       "
 							id="exampleTel0"
 							placeholder="Téléphone"
+							onChange={(e) => setPhone(e.target.value)}
 						/>
 					</div>
 
@@ -104,6 +176,7 @@ const Formulaire = () => {
        focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none"
 							id="exampleInput8"
 							placeholder="Email"
+							onChange={(e) => setEmail(e.target.value)}
 						/>
 					</div>
 					<div className="form-group mb-6">
@@ -128,25 +201,12 @@ const Formulaire = () => {
 							id="exampleFormControlTextarea11"
 							rows="3"
 							placeholder="Votre message..."
+							onChange={(e) => setMessage(e.target.value)}
 						></textarea>
 					</div>
 
-					{/* <div class="form-group form-check text-center mb-6">
-						<input
-							type="checkbox"
-							class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
-							id="exampleCheck87"
-						/>
-						<label
-							class="form-check-label inline-block text-gray-800"
-							for="exampleCheck87"
-						>
-							S'abonner à la newletter
-						</label>
-					</div> */}
-
 					{/* Début piece jointe */}
-					<div className="flex justify-left my-5">
+					{/* <div className="flex justify-left my-5">
 						<div className="mb-3 w-96">
 							<label
 								htmlFor="formFileMultiple"
@@ -175,32 +235,11 @@ const Formulaire = () => {
 								multiple
 							/>
 						</div>
-					</div>
+					</div> */}
 					{/* Fin piece jointe */}
 
-					{/* <div class="flex items-center justify-center">
-						<div
-							class="datepicker relative form-floating mb-3 xl:w-96"
-							data-mdb-toggle-button="false"
-						>
-							<input
-								type="text"
-								class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-400 bg-[#0f0f0f] bg-clip-padding border border-solid border-gray-700 rounded transition ease-in-out m-0 focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none"
-								placeholder="Select a date"
-							/>
-							<label for="floatingInput" class="text-gray-400">
-								Select a date
-							</label>
-							<button
-								class="datepicker-toggle-button"
-								data-mdb-toggle="datepicker"
-							>
-								<i class="fas fa-calendar datepicker-toggle-icon"></i>
-							</button>
-						</div>
-					</div> */}
-
 					<button
+						id="submit-btn"
 						type="submit"
 						className="
      w-full
