@@ -60,9 +60,9 @@ const Formulaire = () => {
 		// console.log(prenom, nom, phone, email, message)
 
 		try {
-			// const response = await axios.post("http://localhost:5000/form", formData)
+			// const response = await axios.post("http://localhost:5000/form2", formData)
 			const response = await axios.post(
-				"https://nodemailer-perso.herokuapp.com/form",
+				"https://nodemailer-perso.herokuapp.com/form2",
 				formData
 			)
 			// console.log(response)
