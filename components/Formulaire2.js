@@ -8,14 +8,30 @@ const Formulaire = () => {
 	const [phone, setPhone] = useState("")
 	const [email, setEmail] = useState("")
 	const [message, setMessage] = useState("")
-	// const [files, setFiles] = useState("")
+	const [selectedFile, setSelectedFile] = useState(null)
 
+	console.log(selectedFile)
 	// custom js
 
 	// Fin custom js
 
 	const handleSubmit = async (e) => {
 		e.preventDefault()
+		const formData = new FormData()
+
+		// const data = {
+		// 	prenom: prenom,
+		// 	nom: nom,
+		// 	phone: phone,
+		// 	email: email,
+		// 	message: message,
+		// }
+		formData.append("prenom", prenom)
+		formData.append("nom", nom)
+		formData.append("phone", phone)
+		formData.append("email", email)
+		formData.append("message", message)
+		formData.append("selectedFile", selectedFile)
 
 		const form = document.querySelector("#contact-form")
 		const submitButton = document.querySelector("#submit-btn")
@@ -38,15 +54,13 @@ const Formulaire = () => {
 
 		isDisabled()
 
-		const data = {
-			email: email,
-			message: message,
-		}
-
+		// const config = {
+		// 	headers: { "content-type": "multipart/form-data; boundary=XXX" },
+		// }
 		// console.log(prenom, nom, phone, email, message)
 
 		try {
-			// const response = await axios.post("http://localhost:5000/form", data)
+			// const response = await axios.post("http://localhost:5000/form", formData)
 			const response = await axios.post(
 				"https://nodemailer-perso.herokuapp.com/form",
 				data
@@ -206,7 +220,7 @@ const Formulaire = () => {
 					</div>
 
 					{/* Début piece jointe */}
-					{/* <div className="flex justify-left my-5">
+					<div className="flex justify-left my-5">
 						<div className="mb-3 w-96">
 							<label
 								htmlFor="formFileMultiple"
@@ -229,13 +243,14 @@ const Formulaire = () => {
     transition
     ease-in-out
     m-0
-    focus:text-white focus:bg-black focus:border-blue-600 focus:outline-none"
+    focus:text-white focus:bg-black focus:border-[#c3a079] focus:shadow-nonefocus:outline-none"
 								type="file"
 								id="formFileMultiple"
-								multiple
+								name="myfile"
+								onChange={(e) => setSelectedFile(e.target.files[0])}
 							/>
 						</div>
-					</div> */}
+					</div>
 					{/* Fin piece jointe */}
 
 					<button
