@@ -10,10 +10,29 @@ const Formulaire = () => {
 	const [message, setMessage] = useState("")
 	const [selectedFile, setSelectedFile] = useState(null)
 
-	console.log(selectedFile)
+	// console.log(selectedFile)
+
 	// custom js
 
 	// Fin custom js
+	const handleFileChange = (event) => {
+		console.log(event.target.files[0].size)
+		if (event.target.files[0].size < 24000000) {
+			setSelectedFile(event.target.files[0])
+			const alertMaxsize = document.querySelector("#alertMaxsize")
+			alertMaxsize.classList.add("hidden")
+			alertMaxsize.classList.remove("block")
+			// console.log("OKKKKK")
+		} else {
+			// console.log("NOT OKKKKK")
+			// alert("Veuillez utiliser un fichier de moins de 25Mo")
+			const alertMaxsize = document.querySelector("#alertMaxsize")
+			alertMaxsize.classList.add("block")
+			alertMaxsize.classList.remove("hidden")
+
+			event.target.files[0] === null
+		}
+	}
 
 	const handleSubmit = async (e) => {
 		e.preventDefault()
@@ -54,33 +73,50 @@ const Formulaire = () => {
 
 		isDisabled()
 
-		// const config = {
-		// 	headers: { "content-type": "multipart/form-data; boundary=XXX" },
-		// }
-		// console.log(prenom, nom, phone, email, message)
+		if (selectedFile !== null) {
+			try {
+				const response = await axios.post(
+					"http://localhost:5000/form-career_attachment",
+					formData
+				)
 
-		try {
-			// const response = await axios.post("http://localhost:5000/form2", formData)
-			const response = await axios.post(
-				"https://nodemailer-perso.herokuapp.com/form2",
-				formData
-			)
-			// console.log(response)
+				if (response.status === 200) {
+					alert("Votre formulaire a bien été envoyé")
+					cleanForm()
+					isEnabled()
+				}
+			} catch (e) {
+				if (e.response.data.error === "Missing parameters") {
+					alert("Veuillez remplir tous les champs du formulaire")
+				} else {
+					alert("Une erreur est survenue")
+					cleanForm()
+				}
 
-			if (response.status === 200) {
-				alert("Votre formulaire a bien été envoyé")
-				cleanForm()
 				isEnabled()
 			}
-		} catch (e) {
-			if (e.response.data.error === "Missing parameters") {
-				alert("Veuillez remplir tous les champs du formulaire")
-			} else {
-				alert("Une erreur est survenue")
-				cleanForm()
-			}
+		} else {
+			try {
+				const response = await axios.post(
+					"http://localhost:5000/form-career",
+					formData
+				)
 
-			isEnabled()
+				if (response.status === 200) {
+					alert("Votre formulaire a bien été envoyé")
+					cleanForm()
+					isEnabled()
+				}
+			} catch (e) {
+				if (e.response.data.error === "Missing parameters") {
+					alert("Veuillez remplir tous les champs du formulaire")
+				} else {
+					alert("Une erreur est survenue")
+					cleanForm()
+				}
+
+				isEnabled()
+			}
 		}
 	}
 
@@ -227,6 +263,10 @@ const Formulaire = () => {
 								className="form-label inline-block mb-2 text-gray-400"
 							>
 								Joindre un fichier :
+								<span className="text-xs block">
+									Si vous avez plusieurs documents, veuillez les rassembler en
+									une archive compressée (zip / Rar), maximum 25mo au total
+								</span>
 							</label>
 							<input
 								className="form-control
@@ -247,10 +287,16 @@ const Formulaire = () => {
 								type="file"
 								id="formFileMultiple"
 								name="myfile"
-								onChange={(e) => setSelectedFile(e.target.files[0])}
+								onChange={handleFileChange}
 							/>
 						</div>
 					</div>
+					<span
+						className="hidden text-red-600 text-sm mt-[-10px] "
+						id="alertMaxsize"
+					>
+						Votre fichier ne doit pas dépasser les 25Mo
+					</span>
 					{/* Fin piece jointe */}
 
 					<button

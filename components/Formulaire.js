@@ -14,13 +14,28 @@ const Formulaire = () => {
 	const [email, setEmail] = useState("")
 	const [adresse, setAdresse] = useState("")
 	const [message, setMessage] = useState("")
-	const [selectedFiles, setSelectedFiles] = useState(null)
+	const [selectedFile, setSelectedFile] = useState(null)
 	const [startDate, setStartDate] = useState(new Date())
 
-	console.log(selectedFiles)
+	// console.log(selectedFile)
 
-	const handleFileEvent = (e) => {
-		setSelectedFiles(e.target.files[0])
+	const handleFileChange = (event) => {
+		console.log(event.target.files[0].size)
+		if (event.target.files[0].size < 24000000) {
+			setSelectedFile(event.target.files[0])
+			const alertMaxsize = document.querySelector("#alertMaxsize")
+			alertMaxsize.classList.add("hidden")
+			alertMaxsize.classList.remove("block")
+			// console.log("OKKKKK")
+		} else {
+			// console.log("NOT OKKKKK")
+			// alert("Veuillez utiliser un fichier de moins de 25Mo")
+			const alertMaxsize = document.querySelector("#alertMaxsize")
+			alertMaxsize.classList.add("block")
+			alertMaxsize.classList.remove("hidden")
+
+			event.target.files[0] === null
+		}
 	}
 
 	const handleSubmit = async (e) => {
@@ -41,7 +56,7 @@ const Formulaire = () => {
 		formData.append("adresse", adresse)
 		formData.append("message", message)
 		formData.append("startDate", startDate)
-		formData.append("selectedFiles", selectedFiles)
+		formData.append("selectedFile", selectedFile)
 
 		// for (let i = 0; i < selectedFiles.length; i++) {
 		// 	formData.append("selectedFiles", selectedFiles[i])
@@ -68,32 +83,50 @@ const Formulaire = () => {
 
 		isDisabled()
 
-		// const config = {
-		// 	headers: { "content-type": "multipart/form-data; boundary=XXX" },
-		// }
-		// console.log(prenom, nom, phone, email, message)
+		if (selectedFile !== null) {
+			try {
+				const response = await axios.post(
+					"http://localhost:5000/form-estimate_attachment",
+					formData
+				)
 
-		try {
-			// const response = await axios.post("http://localhost:5000/form1", formData)
-			const response = await axios.post(
-				"https://nodemailer-perso.herokuapp.com/form1",
-				formData
-			)
+				if (response.status === 200) {
+					alert("Votre formulaire a bien été envoyé")
+					cleanForm()
+					isEnabled()
+				}
+			} catch (e) {
+				if (e.response.data.error === "Missing parameters") {
+					alert("Veuillez remplir tous les champs du formulaire")
+				} else {
+					alert("Une erreur est survenue")
+					cleanForm()
+				}
 
-			if (response.status === 200) {
-				alert("Votre formulaire a bien été envoyé")
-				cleanForm()
 				isEnabled()
 			}
-		} catch (e) {
-			if (e.response.data.error === "Missing parameters") {
-				alert("Veuillez remplir tous les champs du formulaire")
-			} else {
-				alert("Une erreur est survenue")
-				cleanForm()
-			}
+		} else {
+			try {
+				const response = await axios.post(
+					"http://localhost:5000/form-estimate",
+					formData
+				)
 
-			isEnabled()
+				if (response.status === 200) {
+					alert("Votre formulaire a bien été envoyé")
+					cleanForm()
+					isEnabled()
+				}
+			} catch (e) {
+				if (e.response.data.error === "Missing parameters") {
+					alert("Veuillez remplir tous les champs du formulaire")
+				} else {
+					alert("Une erreur est survenue")
+					cleanForm()
+				}
+
+				isEnabled()
+			}
 		}
 	}
 
@@ -251,7 +284,7 @@ const Formulaire = () => {
 							id="exampleFormControlTextarea13"
 							rows="3"
 							placeholder="Description des travaux..."
-							onChange={(e) => setMessage(e.target.value)}
+							onChange={(e) => setMessage(e.target.files)}
 						></textarea>
 					</div>
 
@@ -262,10 +295,10 @@ const Formulaire = () => {
 								htmlFor="formFileMultiple2"
 								className="form-label inline-block mb-2 text-gray-400"
 							>
-								Joindre des fichiers :
+								Joindre un fichier :
 								<span className="text-xs block">
 									Si vous avez plusieurs documents, veuillez les rassembler en
-									une archive compressée (zip / Rar)
+									une archive compressée (zip / rar), maximum 25mo au total
 								</span>
 							</label>
 							<input
@@ -286,10 +319,16 @@ const Formulaire = () => {
     focus:text-white focus:bg-black focus:border-[#c3a079] focus:shadow-none focus:outline-none"
 								type="file"
 								id="formFileMultiple2"
-								onChange={handleFileEvent}
+								onChange={handleFileChange}
 							/>
 						</div>
 					</div>
+					<span
+						className="hidden text-red-600 text-sm mt-[-10px] "
+						id="alertMaxsize"
+					>
+						Votre fichier ne doit pas dépasser les 25Mo
+					</span>
 					{/* Fin piece jointe */}
 
 					<div className="flex justify-left my-5">
