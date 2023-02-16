@@ -327,10 +327,10 @@ const Formulaire = () => {
      shadow-md
      hover:bg-[#9d7f5e] hover:shadow-lg
      focus:bg-[#9d7f5e] focus:shadow-lg focus:outline-none focus:ring-0
-     active:bg-blue-800 active:shadow-lg
+     active:bg-[#9d7f5e] active:shadow-lg
      transition
      duration-150
-     ease-in-out"
+     ease-in-out btn-form"
 					>
 						Envoyer
 					</button>
