@@ -265,7 +265,7 @@ const Formulaire = () => {
 								Joindre un fichier :
 								<span className="text-xs block">
 									Si vous avez plusieurs documents, veuillez les rassembler en
-									une archive compressée (zip / Rar), maximum 25mo au total
+									une archive compressée (zip / rar), maximum 25mo au total
 								</span>
 							</label>
 							<input
