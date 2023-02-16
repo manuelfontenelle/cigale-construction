@@ -17,7 +17,8 @@ const Formulaire = () => {
 
 	// Fin custom js
 	const handleFileChange = (event) => {
-		console.log(event.target.files[0].size)
+		// console.log(event.target.files[0].size)
+		// limite poids 25mo
 		if (event.target.files[0].size < 24000000) {
 			setSelectedFile(event.target.files[0])
 			const alertMaxsize = document.querySelector("#alertMaxsize")
