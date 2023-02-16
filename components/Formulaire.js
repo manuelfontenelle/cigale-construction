@@ -6,6 +6,7 @@ import "react-datepicker/dist/react-datepicker.css"
 import { registerLocale, setDefaultLocale } from "react-datepicker"
 import fr from "date-fns/locale/fr"
 registerLocale("fr", fr)
+import { ThreeDots } from "react-loader-spinner"
 
 const Formulaire = () => {
 	const [prenom, setPrenom] = useState("")
@@ -64,6 +65,8 @@ const Formulaire = () => {
 
 		const form = document.querySelector("#contact-form1")
 		const submitButton = document.querySelector("#submit-btn1")
+		const loader = document.querySelector("#loader")
+
 		// Fonction pour vider les champs du formulaire :
 		const cleanForm = () => {
 			form.reset()
@@ -73,12 +76,16 @@ const Formulaire = () => {
 		const isEnabled = () => {
 			submitButton.removeAttribute("disabled")
 			submitButton.classList.remove("disabled-btn")
+			loader.classList.add("hidden")
+			loader.classList.remove("block")
 		}
 
 		// Fonction pour désactiver le bouton d'envoi du formulaire :
 		const isDisabled = () => {
 			submitButton.setAttribute("disabled", "disabled")
 			submitButton.classList.add("disabled-btn")
+			loader.classList.remove("hidden")
+			loader.classList.add("block")
 		}
 
 		isDisabled()
@@ -141,7 +148,7 @@ const Formulaire = () => {
 	}
 
 	return (
-		<div>
+		<div className="relative">
 			<div className="block rounded-lg shadow-lg bg-[#0f0f0f] max-w-lg">
 				<form
 					id="contact-form1"
@@ -300,15 +307,18 @@ const Formulaire = () => {
 
 					{/* Début piece jointe */}
 					<div className="flex justify-left my-5">
-						<div className="mb-3 w-96">
+						<div className="mb-3 w-full relative">
 							<label
-								htmlFor="formFileMultiple2"
+								htmlFor="formFileMultiple"
 								className="form-label inline-block mb-2 text-gray-400"
 							>
 								Joindre un fichier :
-								<span className="text-xs block">
+								<span className="text-xs block mt-1 text-gray-400 pr-[35%]">
 									Si vous avez plusieurs documents, veuillez les rassembler en
-									une archive compressée (zip / rar), maximum 25mo au total
+									une archive compressée (zip / rar)
+									<span className="underline absolute right-0">
+										25mo max au total
+									</span>
 								</span>
 							</label>
 							<input
@@ -342,7 +352,7 @@ const Formulaire = () => {
 					{/* Fin piece jointe */}
 
 					<div className="flex justify-left my-5">
-						<div className="mb-3 w-96">
+						<div className="mb-3 w-full">
 							<label
 								htmlFor="floatingInput"
 								className="text-gray-400 block mb-2"
@@ -383,6 +393,21 @@ const Formulaire = () => {
 					>
 						Envoyer
 					</button>
+					<div className="hidden" id="loader">
+						<div className="mx-auto w-96 flex justify-center">
+							<ThreeDots
+								id="loaderId"
+								height="80"
+								width="80"
+								radius="9"
+								color="#c3a079"
+								ariaLabel="three-dots-loading"
+								wrapperStyle={{}}
+								wrapperClassName=""
+								visible={true}
+							/>
+						</div>
+					</div>
 				</form>
 			</div>
 		</div>
