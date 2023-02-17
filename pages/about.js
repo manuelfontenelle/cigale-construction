@@ -42,7 +42,9 @@ const about = () => {
 							</span>
 							<span className="block mt-1 text-[#c3a079]">
 								Entrepreneur Général spécialisé dans la réalisation de projet
-								Architecturaux Nous œuvrons dans l’aire du grand Montréal.
+								Architecturaux.
+								<br />
+								Nous œuvrons dans l’aire du grand Montréal.
 							</span>
 							<span className="block mt-10 font-bold text-lg text-[#c3a079]">
 								NOTRE MISSION
@@ -58,9 +60,9 @@ const about = () => {
 								CONFIEZ NOUS VOS CLEFS
 							</span>
 							<span className=" w-16 h-0.5 mt-1.5 mb-3 bg-[#c3a079] block text-center"></span>
-							Notre ADN est guidé par la maitrise de la performance. Fort d’une
-							équipe regroupant des talents, CIGALE CONSTRUCTION se donne le
-							devoir de livrer votre projet dans le respect des coûts de
+							Notre ADN est guidé par la maitrise de la performance. <br /> Fort
+							d’une équipe regroupant des talents, CIGALE CONSTRUCTION se donne
+							le devoir de livrer votre projet dans le respect des coûts de
 							construction, des échéanciers et de la qualité de l’ouvrage CIGALE
 							CONSTRUCTION se distingue par ses connaissances, son savoir-faire,
 							son service d’accompagnement, la qualité de ses réalisations pour
