@@ -44,7 +44,7 @@ const about = () => {
 								Entrepreneur Général spécialisé dans la réalisation de projet
 								Architecturaux Nous œuvrons dans l’aire du grand Montréal.
 							</span>
-							<span className="block mt-10 font-bold text-lg">
+							<span className="block mt-10 font-bold text-lg text-[#c3a079]">
 								NOTRE MISSION
 							</span>
 							<span className=" w-16 h-0.5 mt-1.5 mb-3 bg-[#c3a079] block "></span>
@@ -54,7 +54,7 @@ const about = () => {
 							En respectant ceux-ci, notre posture sera de challenger votre
 							projet nourri de vos idées, de nos compétences et de notre
 							savoir-faire.
-							<span className="block mt-10 font-bold text-lg">
+							<span className="block mt-10 font-bold text-lg text-[#c3a079]">
 								CONFIEZ NOUS VOS CLEFS
 							</span>
 							<span className=" w-16 h-0.5 mt-1.5 mb-3 bg-[#c3a079] block text-center"></span>
