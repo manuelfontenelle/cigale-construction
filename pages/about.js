@@ -33,31 +33,38 @@ const about = () => {
 						<h1 className="  font-bold uppercase  text-[#c3a079] text-3xl">
 							Cigale Construction
 						</h1>
-						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block text-center"></span>
-						<p className=" text-white font-reg text-sm mt-5 leading-6 md:text-reg md:leading-7">
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text
-							ever since the 1500s, when an unknown printer took a galley of
-							type and scrambled it to make a type specimen book. Lorem Ipsum is
-							simply dummy text of the printing and typesetting industry. Lorem
-							Ipsum has been the industry's standard dummy text ever since the
-							1500s, when an unknown printer took a galley of type and scrambled
-							it to make a and scrambled it to make a type specimen book. and
-							scrambled it to make a type specimen book. and scrambled it to
-							make a type specimen book. type specimen book. and scrambled it to
-							make a type specimen book. and scrambled it to make a type
-							specimen book. Lorem Ipsum is simply dummy text of the printing
-							and typesetting industry. Lorem Ipsum has been the industry's
-							standard dummy text ever since the 1500s, when an unknown printer
-							took a galley of type and scrambled it to make a type specimen
-							book. Lorem Ipsum is simply dummy text of the printing and
-							typesetting industry. Lorem Ipsum has been the industry's standard
-							dummy text ever since the 1500s, when an unknown printer took a
-							galley of type and scrambled it to make a and scrambled it to make
-							a type specimen book. and scrambled it to make a type specimen
-							book. and scrambled it to make a type specimen book. type specimen
-							book. and scrambled it to make a type specimen book. and scrambled
-							it to make a type specimen book.
+						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block "></span>
+						<p className=" text-white font-reg text-md mt-5 leading-6 md:text-reg md:leading-7">
+							<span className="block italic font-bold text-xl lg:pr-[30%]">
+								EXPÉRIENCE MATURE, DES COMPÉTENCES AVANCÉES, DES COLLABORATIONS
+								DISTINGUÉES, UN RÉSEAU SOLIDE, DES VALEURS RECONNUES, UNE ÉQUIPE
+								BIENHEUREUSE ET DYNAMIQUE
+							</span>
+							<span className="block mt-1 text-[#c3a079]">
+								Entrepreneur Général spécialisé dans la réalisation de projet
+								Architecturaux Nous œuvrons dans l’aire du grand Montréal.
+							</span>
+							<span className="block mt-10 font-bold text-lg">
+								NOTRE MISSION
+							</span>
+							<span className=" w-16 h-0.5 mt-1.5 mb-3 bg-[#c3a079] block "></span>
+							Est de réaliser vos travaux en étant à l’écoute de vos besoins, de
+							vos attentes et de vos objectifs.
+							<br />
+							En respectant ceux-ci, notre posture sera de challenger votre
+							projet nourri de vos idées, de nos compétences et de notre
+							savoir-faire.
+							<span className="block mt-10 font-bold text-lg">
+								CONFIEZ NOUS VOS CLEFS
+							</span>
+							<span className=" w-16 h-0.5 mt-1.5 mb-3 bg-[#c3a079] block text-center"></span>
+							Notre ADN est guidé par la maitrise de la performance. Fort d’une
+							équipe regroupant des talents, CIGALE CONSTRUCTION se donne le
+							devoir de livrer votre projet dans le respect des coûts de
+							construction, des échéanciers et de la qualité de l’ouvrage CIGALE
+							CONSTRUCTION se distingue par ses connaissances, son savoir-faire,
+							son service d’accompagnement, la qualité de ses réalisations pour
+							l’entière satisfaction de nos clients.
 						</p>
 					</div>
 				</section>
@@ -69,21 +76,20 @@ const about = () => {
 							alt="Kevin allegre"
 						/>
 						<div className="flex-1 xl:pr-40">
-							<h2 className="text-white text-3xl font-bold">Kévin Allegre</h2>
-							<p className=" text-white font-reg text-sm mt-5 leading-6 md:text-reg md:leading-7 ">
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s, when an unknown printer took a galley
-								of type and scrambled it to make a type specimen book. Lorem
-								Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s, when an unknown printer took a galley
-								of type and scrambled it to make a and scrambled it to make a
-								type specimen book. and scrambled it to make a type specimen
-								book. and scrambled it to make a type specimen book. type
-								specimen book. and scrambled it to make a type specimen book.
-								and scrambled it to make a type specimen book. Lorem Ipsum is
-								simply dummy text of the printing and typesetting industry.
+							<h2 className="text-[#c3a079] text-3xl font-bold ">
+								Kévin Allegre
+							</h2>
+							<p className=" text-white font-reg text-md mt-5 leading-6 md:text-reg md:leading-7 ">
+								Diplômé de l’école d’ingénieur du CESI, Kévin cumule plus de 10
+								ans d’expérience dans la gestion de projet. Sa volonté naturelle
+								de vouloir toujours se dépasser et relever des défis, l’a
+								conduit inévitablement à créer sa propre société. De son
+								expérience antérieure et de son esprit cartésien, il transmet sa
+								rigueur et sa méthodologie à ses équipes dans le but d’une
+								amélioration continue. Personne au grand cœur, Kevin a participé
+								à deux missions humanitaires à l’étranger. C’était donc
+								inéluctable pour lui que Cigale Construction soit partenaire
+								d’Architecte Sans Frontière Québec.
 							</p>
 						</div>
 					</div>
