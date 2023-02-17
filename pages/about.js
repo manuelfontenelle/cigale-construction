@@ -80,16 +80,21 @@ const about = () => {
 								Kévin Allegre
 							</h2>
 							<p className=" text-white font-reg text-md mt-5 leading-6 md:text-reg md:leading-7 ">
-								Diplômé de l’école d’ingénieur du CESI, Kévin cumule plus de 10
-								ans d’expérience dans la gestion de projet. Sa volonté naturelle
-								de vouloir toujours se dépasser et relever des défis, l’a
-								conduit inévitablement à créer sa propre société. De son
-								expérience antérieure et de son esprit cartésien, il transmet sa
-								rigueur et sa méthodologie à ses équipes dans le but d’une
-								amélioration continue. Personne au grand cœur, Kevin a participé
-								à deux missions humanitaires à l’étranger. C’était donc
-								inéluctable pour lui que Cigale Construction soit partenaire
-								d’Architecte Sans Frontière Québec.
+								<span className="font-bold">
+									Diplômé de l’école d’ingénieur du CESI, Kévin cumule plus de
+									10 ans d’expérience dans la gestion de projet.
+								</span>
+								<br />
+								Sa volonté naturelle de vouloir toujours se dépasser et relever
+								des défis, l’a conduit inévitablement à créer sa propre société.
+								De son expérience antérieure et de son esprit cartésien, il
+								transmet sa rigueur et sa méthodologie à ses équipes dans le but
+								d’une amélioration continue. <br />
+								<br />
+								Personne au grand cœur, Kevin a participé à deux missions
+								humanitaires à l’étranger. <br />
+								C’était donc inéluctable pour lui que Cigale Construction soit
+								partenaire d’Architecte Sans Frontière Québec.
 							</p>
 						</div>
 					</div>
