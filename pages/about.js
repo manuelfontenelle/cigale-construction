@@ -35,7 +35,7 @@ const about = () => {
 						</h1>
 						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block "></span>
 						<p className=" text-white font-reg text-md mt-5 leading-6 md:text-reg md:leading-7">
-							<span className="block italic font-bold text-xl lg:pr-[30%]">
+							<span className="block italic font-bold text-xl ">
 								EXPÉRIENCE MATURE, DES COMPÉTENCES AVANCÉES, DES COLLABORATIONS
 								DISTINGUÉES, UN RÉSEAU SOLIDE, DES VALEURS RECONNUES, UNE ÉQUIPE
 								BIENHEUREUSE ET DYNAMIQUE
