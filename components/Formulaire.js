@@ -302,7 +302,7 @@ const Formulaire = () => {
 							id="exampleFormControlTextarea13"
 							rows="3"
 							placeholder="Description des travaux..."
-							onChange={(e) => setMessage(e.target.files)}
+							onChange={(e) => setMessage(e.target.value)}
 						></textarea>
 					</div>
 
