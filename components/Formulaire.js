@@ -99,7 +99,7 @@ const Formulaire = () => {
 				// )
 
 				const response = await axios.post(
-					"https://nodemailer-perso.herokuapp.com/form-estimate_attachment",
+					"https://nodemailer-cigale-construction.herokuapp.com/form-estimate_attachment",
 					formData
 				)
 
@@ -126,7 +126,7 @@ const Formulaire = () => {
 				// )
 
 				const response = await axios.post(
-					"https://nodemailer-perso.herokuapp.com/form-estimate",
+					"https://nodemailer-cigale-construction.herokuapp.com/form-estimate",
 					formData
 				)
 
