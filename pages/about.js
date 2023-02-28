@@ -77,7 +77,7 @@ const about = () => {
 							src={slide1}
 							alt="Kevin allegre"
 						/>
-						<div className="flex-1 xl:pr-40">
+						<div className="flex-1 ">
 							<h2 className="text-[#c3a079] text-3xl font-bold ">
 								Kévin Allegre
 							</h2>
