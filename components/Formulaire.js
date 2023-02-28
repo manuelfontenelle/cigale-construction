@@ -150,7 +150,7 @@ const Formulaire = () => {
 
 	return (
 		<div className="relative">
-			<div className="block rounded-lg shadow-lg bg-[#0f0f0f] max-w-lg">
+			<div className="block rounded-lg shadow-lg bg-[#0f0f0f] xl:max-w-lg">
 				<form
 					id="contact-form1"
 					onSubmit={(e) => handleSubmit(e)}

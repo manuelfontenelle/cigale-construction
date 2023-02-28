@@ -138,7 +138,7 @@ const Formulaire = () => {
 
 	return (
 		<div>
-			<div className="block rounded-lg shadow-lg bg-[#0f0f0f] max-w-lg">
+			<div className="block rounded-lg shadow-lg bg-[#0f0f0f] xl:max-w-lg">
 				<form id="contact-form" onSubmit={(e) => handleSubmit(e)}>
 					<div className="grid grid-cols-2 gap-4">
 						<div className="form-group mb-6">

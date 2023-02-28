@@ -48,7 +48,7 @@ export default function Home() {
 						<Image src={logo} alt="Logo Cigale Construction" width={700} />
 					</div>
 				</section>
-				<section className=" py-10 bg-[#0f0f0f] px-5 md:px-20 xl:px-40">
+				<section className=" py-10 bg-[#0f0f0f] px-5 md:px-10 2xl:px-40">
 					<div className="my-6">
 						<h1 className=" text-white font-bold uppercase text-center text-3xl">
 							Projets réalisés
@@ -56,7 +56,7 @@ export default function Home() {
 						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block mx-auto text-center"></span>
 					</div>
 
-					<div className="flex flex-col gap-20 py-10 lg:flex-row lg:flex-wrap">
+					<div className="flex flex-col  gap-10 2xl:gap-20 py-10 lg:flex-row lg:flex-wrap">
 						<div className="basis-1/3 flex-1">
 							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
 								Lorem Ipsum
@@ -69,7 +69,7 @@ export default function Home() {
 								slide4={slide4}
 								slide5={slide5}
 							/>
-							<p className=" text-white font-light text-sm mt-5 leading-6 md:text-base md:leading-7">
+							<p className=" text-white font-light  text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley
@@ -88,7 +88,7 @@ export default function Home() {
 								slide4={slide2}
 								slide5={slide5}
 							/>
-							<p className=" text-white font-light text-sm mt-5 leading-6 md:text-base md:leading-7">
+							<p className=" text-white font-light text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley
@@ -107,7 +107,7 @@ export default function Home() {
 								slide3={slide4}
 								slide4={slide1}
 							/>
-							<p className=" text-white font-light text-sm mt-5 leading-6 md:text-base md:leading-7">
+							<p className=" text-white font-light text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley
@@ -126,7 +126,7 @@ export default function Home() {
 								// slide4={slide4}
 								// slide4={slide4}
 							/>
-							<p className=" text-white font-reg text-sm mt-5 leading-6 md:text-base md:leading-7">
+							<p className=" text-white font-reg text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industry's standard dummy
 								text ever since the 1500s, when an unknown printer took a galley
@@ -136,7 +136,7 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className=" bg-[#0f0f0f] px-5 flex flex-col gap-16 pt-5 pb-24  lg:flex-row lg:flex-wrap md:px-20 xl:px-40">
+				<section className=" bg-[#0f0f0f] px-5 flex flex-col gap-10 2xl:gap-20 pt-5 pb-24  lg:flex-row lg:flex-wrap md:px-10 2xl:px-40">
 					<div className="h-[430px]  md:flex-1 ">
 						<Image
 							src={ratesIcon}

@@ -28,14 +28,14 @@ const about = () => {
 						/>
 					</div>
 				</section>
-				<section className="py-10 bg-[#0f0f0f] px-5 md:px-20 xl:px-40">
+				<section className="py-10 bg-[#0f0f0f] px-5 md:px-10 2xl:px-20">
 					<div className="my-6">
-						<h1 className="  font-bold uppercase  text-[#c3a079] text-3xl">
+						<h1 className="  font-bold uppercase  text-[#c3a079]  text-2xl 2xl:text-3xl">
 							Cigale Construction
 						</h1>
 						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block "></span>
-						<p className=" text-white font-reg text-md mt-5 leading-6 md:text-reg md:leading-7">
-							<span className="block italic font-bold text-xl ">
+						<p className=" text-white font-reg text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
+							<span className="block italic font-bold  text-lg 2xl:text-xl ">
 								EXPÉRIENCE MATURE, DES COMPÉTENCES AVANCÉES, DES COLLABORATIONS
 								DISTINGUÉES, UN RÉSEAU SOLIDE, DES VALEURS RECONNUES, UNE ÉQUIPE
 								BIENHEUREUSE ET DYNAMIQUE
@@ -70,7 +70,7 @@ const about = () => {
 						</p>
 					</div>
 				</section>
-				<section className="pb-20 px-5 md:px-20 xl:px-40">
+				<section className="pb-20 px-5 md:px-10 2xl:px-20">
 					<div className="flex flex-col gap-10  xl:flex-row xl:items-end">
 						<Image
 							className=" block w-full object-cover  sm:h-[350px] xl:basis-1/4 xl:h-[300px] xl:w-full"
@@ -81,7 +81,7 @@ const about = () => {
 							<h2 className="text-[#c3a079] text-3xl font-bold ">
 								Kévin Allegre
 							</h2>
-							<p className=" text-white font-reg text-md mt-5 leading-6 md:text-reg md:leading-7 ">
+							<p className=" text-white font-reg text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7 ">
 								<span className="font-bold">
 									Diplômé de l’école d’ingénieur du CESI, Kévin cumule plus de
 									10 ans d’expérience dans la gestion de projet.
