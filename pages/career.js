@@ -44,7 +44,7 @@ const career = () => {
 					</div>
 					<div className="flex flex-col gap-10  xl:flex-row xl:items-start ">
 						<div className=" block w-full object-cover  xl:w-[50%] ">
-							<p className=" text-white font-reg text-sm my-4 leading-6 md:text-reg md:leading-7 xl:pr-80">
+							<p className=" text-white font-reg text-sm my-4 leading-6 md:text-reg md:leading-7 2xl:pr-60">
 								Vous souhaitez nous rejoindre ? Veuillez remplir ce formulaire
 								et nous vous contacteront prochainement :
 							</p>
