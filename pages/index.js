@@ -136,8 +136,8 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className=" bg-[#0f0f0f] px-5 flex flex-col gap-10 2xl:gap-20 pt-5 pb-24  lg:flex-row lg:flex-wrap md:px-10 2xl:px-40">
-					<div className="h-[430px]  md:flex-1 ">
+				<section className=" bg-[#0f0f0f] px-5 flex flex-col gap-10 2xl:gap-20 pt-5 pb-12  lg:flex-row lg:flex-wrap md:px-10 2xl:px-40">
+					<div className="h-[400px] 2xl:h-[420px]  md:flex-1 ">
 						<Image
 							src={ratesIcon}
 							alt="Témoignages clients"
@@ -150,7 +150,7 @@ export default function Home() {
 						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block mx-auto text-center"></span>
 						<SliderTxt />
 					</div>
-					<div className=" h-[430px] md:flex-1">
+					<div className=" h-[400px] 2xl:h-[420px] md:flex-1">
 						<Image
 							src={archiIcon}
 							alt="Témoignages Architectes"
