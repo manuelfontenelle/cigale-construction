@@ -31,7 +31,7 @@ const NavBar = () => {
 			id="navbar"
 		>
 			<div
-				className={`flex  items-center w-full h-full px-5 md:px-10 2xl:px-20 ${
+				className={`flex  items-center w-full h-full px-5 md:px-10 2xl:px-40 ${
 					currentRoute === "/" && scrollPosition === 0
 						? "justify-end"
 						: "justify-between"
