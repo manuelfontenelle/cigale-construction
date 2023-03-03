@@ -5,7 +5,7 @@ import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import Image from "next/image"
 import slide1 from "../public/slide1.jpg"
-import photoProfil from "../public/Kevin-allegre_portrait.jpg"
+import photoProfil from "../public/kevin-allegre_portrait.jpg"
 
 const about = () => {
 	return (
