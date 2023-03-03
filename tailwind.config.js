@@ -25,9 +25,6 @@ module.exports = {
 			backgroundImage: {
 				"intro-bg": "url('../public/intro_bg.jpg')",
 			},
-			objectPosition: {
-				"custom-bottom": "10% 20%",
-			},
 		},
 	},
 	// plugin: [],
