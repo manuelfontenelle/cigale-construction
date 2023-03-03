@@ -17,6 +17,34 @@ import { useEffect } from "react"
 
 import Image from "next/image"
 import logo from "../public/logo.png"
+import Projet2slide1 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/001.jpg"
+import Projet2slide2 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/002.jpg"
+import Projet2slide3 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/003.jpg"
+import Projet2slide4 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/004.jpg"
+import Projet2slide5 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/005.jpg"
+import Projet2slide6 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/006.jpg"
+import Projet2slide7 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/007.jpg"
+import Projet2slide8 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/008.jpg"
+import Projet2slide9 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/009.jpg"
+import Projet2slide10 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/010.jpg"
+import Projet2slide11 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/011.jpg"
+import Projet2slide12 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/012.jpg"
+
+import Projet3slide1 from "../public/projets/Rénovation-appartement-locatif/001.jpg"
+import Projet3slide2 from "../public/projets/Rénovation-appartement-locatif/002.jpg"
+import Projet3slide3 from "../public/projets/Rénovation-appartement-locatif/003.jpg"
+import Projet3slide4 from "../public/projets/Rénovation-appartement-locatif/004.jpg"
+import Projet3slide5 from "../public/projets/Rénovation-appartement-locatif/005.jpg"
+import Projet3slide6 from "../public/projets/Rénovation-appartement-locatif/006.jpg"
+import Projet3slide7 from "../public/projets/Rénovation-appartement-locatif/007.jpg"
+
+import Projet4slide1 from "../public/projets/Travaux-structuraux/001.jpg"
+import Projet4slide2 from "../public/projets/Travaux-structuraux/002.jpg"
+import Projet4slide3 from "../public/projets/Travaux-structuraux/003.jpg"
+import Projet4slide4 from "../public/projets/Travaux-structuraux/004.jpg"
+import Projet4slide5 from "../public/projets/Travaux-structuraux/005.jpg"
+import Projet4slide6 from "../public/projets/Travaux-structuraux/006.jpg"
+
 import slide1 from "../public/slide1.jpg"
 import slide2 from "../public/slide2.jpg"
 import slide3 from "../public/slide3.jpg"
@@ -78,15 +106,22 @@ export default function Home() {
 						</div>
 						<div className="basis-1/3 flex-1">
 							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
-								Lorem Ipsum
+								Rénovation haut de gamme, ville Mont Royal
 							</h2>
 							<Slider
 								number="number2"
-								slide1={slide3}
-								slide2={slide4}
-								slide3={slide1}
-								slide4={slide2}
-								slide5={slide5}
+								slide1={Projet2slide1}
+								slide2={Projet2slide2}
+								slide3={Projet2slide3}
+								slide4={Projet2slide4}
+								slide5={Projet2slide5}
+								slide6={Projet2slide6}
+								slide7={Projet2slide7}
+								slide8={Projet2slide8}
+								slide9={Projet2slide9}
+								slide10={Projet2slide10}
+								slide11={Projet2slide11}
+								slide12={Projet2slide12}
 							/>
 							<p className=" text-white font-light text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -97,15 +132,17 @@ export default function Home() {
 						</div>
 						<div className="basis-1/3 flex-1">
 							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
-								Lorem Ipsum
+								Rénovation appartement locatif
 							</h2>
 							<Slider
 								number="number3"
-								slide1={slide2}
-								slide5={slide5}
-								slide2={slide3}
-								slide3={slide4}
-								slide4={slide1}
+								slide1={Projet3slide1}
+								slide2={Projet3slide2}
+								slide3={Projet3slide3}
+								slide4={Projet3slide4}
+								slide5={Projet3slide5}
+								slide6={Projet3slide6}
+								slide7={Projet3slide7}
 							/>
 							<p className=" text-white font-light text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -116,15 +153,16 @@ export default function Home() {
 						</div>
 						<div className="basis-1/3 flex-1">
 							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
-								Lorem Ipsum
+								Travaux structuraux
 							</h2>
 							<Slider
 								number="number4"
-								slide1={slide1}
-								slide2={slide2}
-								slide3={slide3}
-								// slide4={slide4}
-								// slide4={slide4}
+								slide1={Projet4slide1}
+								slide2={Projet4slide2}
+								slide3={Projet4slide3}
+								slide4={Projet4slide4}
+								slide5={Projet4slide5}
+								slide6={Projet4slide6}
 							/>
 							<p className=" text-white font-reg text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
 								Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -137,7 +175,7 @@ export default function Home() {
 				</section>
 
 				<section className=" bg-[#0f0f0f] px-5 flex flex-col gap-10 2xl:gap-20 pt-5 pb-12  lg:flex-row lg:flex-wrap md:px-10 2xl:px-40">
-					<div className="h-[400px] 2xl:h-[420px]  md:flex-1 ">
+					<div className="h-[420px] 2xl:h-[470px]  md:flex-1 ">
 						<Image
 							src={ratesIcon}
 							alt="Témoignages clients"
@@ -150,7 +188,7 @@ export default function Home() {
 						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block mx-auto text-center"></span>
 						<SliderTxt />
 					</div>
-					<div className=" h-[400px] 2xl:h-[420px] md:flex-1">
+					<div className=" h-[400px] 2xl:h-[470px] md:flex-1">
 						<Image
 							src={archiIcon}
 							alt="Témoignages Architectes"

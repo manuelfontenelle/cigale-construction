@@ -6,7 +6,7 @@ import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import Formulaire from "../components/Formulaire"
 import Image from "next/image"
-import slide1 from "../public/slide1.jpg"
+import slide1 from "../public/page_estimation.jpg"
 import illu from "../public/illu.svg"
 
 const contact = () => {
@@ -30,9 +30,9 @@ const contact = () => {
 			<NavBar />
 			<main className="min-h-screen bg-[#0f0f0f]">
 				<section className="  pt-20">
-					<div className="h-96">
+					<div className="md:h-[31rem]">
 						<Image
-							className=" block w-full object-cover h-[100%]"
+							className=" block w-full object-cover h-[100%] object-bottom "
 							src={slide1}
 							alt="Cigale Construction"
 						/>

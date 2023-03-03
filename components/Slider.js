@@ -1,7 +1,21 @@
 import React from "react"
 import Image from "next/image"
 
-const Slider = ({ number, slide1, slide2, slide3, slide4, slide5 }) => {
+const Slider = ({
+	number,
+	slide1,
+	slide2,
+	slide3,
+	slide4,
+	slide5,
+	slide6,
+	slide7,
+	slide8,
+	slide9,
+	slide10,
+	slide11,
+	slide12,
+}) => {
 	return (
 		<div
 			id={`carouselExampleIndicators${number}`}
@@ -50,6 +64,76 @@ const Slider = ({ number, slide1, slide2, slide3, slide4, slide5 }) => {
 				) : (
 					""
 				)}
+				{slide6 ? (
+					<button
+						type="button"
+						data-bs-target={`#carouselExampleIndicators${number}`}
+						data-bs-slide-to="5"
+						aria-label="Slide 6"
+					></button>
+				) : (
+					""
+				)}
+				{slide7 ? (
+					<button
+						type="button"
+						data-bs-target={`#carouselExampleIndicators${number}`}
+						data-bs-slide-to="6"
+						aria-label="Slide 7"
+					></button>
+				) : (
+					""
+				)}
+				{slide8 ? (
+					<button
+						type="button"
+						data-bs-target={`#carouselExampleIndicators${number}`}
+						data-bs-slide-to="7"
+						aria-label="Slide 8"
+					></button>
+				) : (
+					""
+				)}
+				{slide9 ? (
+					<button
+						type="button"
+						data-bs-target={`#carouselExampleIndicators${number}`}
+						data-bs-slide-to="8"
+						aria-label="Slide 9"
+					></button>
+				) : (
+					""
+				)}
+				{slide10 ? (
+					<button
+						type="button"
+						data-bs-target={`#carouselExampleIndicators${number}`}
+						data-bs-slide-to="9"
+						aria-label="Slide 10"
+					></button>
+				) : (
+					""
+				)}
+				{slide11 ? (
+					<button
+						type="button"
+						data-bs-target={`#carouselExampleIndicators${number}`}
+						data-bs-slide-to="10"
+						aria-label="Slide 11"
+					></button>
+				) : (
+					""
+				)}
+				{slide12 ? (
+					<button
+						type="button"
+						data-bs-target={`#carouselExampleIndicators${number}`}
+						data-bs-slide-to="11"
+						aria-label="Slide 12"
+					></button>
+				) : (
+					""
+				)}
 			</div>
 			<div className="carousel-inner relative w-full overflow-hidden h-[28rem]">
 				<div className="carousel-item active float-left w-full h-full">
@@ -89,6 +173,83 @@ const Slider = ({ number, slide1, slide2, slide3, slide4, slide5 }) => {
 						<Image
 							className=" block w-full  object-cover h-[100%]"
 							src={slide5}
+							alt="Wild Landscape"
+						/>
+					</div>
+				) : (
+					""
+				)}
+				{slide6 ? (
+					<div className="carousel-item float-left w-full h-full">
+						<Image
+							className=" block w-full  object-cover h-[100%]"
+							src={slide6}
+							alt="Wild Landscape"
+						/>
+					</div>
+				) : (
+					""
+				)}
+				{slide7 ? (
+					<div className="carousel-item float-left w-full h-full">
+						<Image
+							className=" block w-full  object-cover h-[100%]"
+							src={slide7}
+							alt="Wild Landscape"
+						/>
+					</div>
+				) : (
+					""
+				)}
+				{slide8 ? (
+					<div className="carousel-item float-left w-full h-full">
+						<Image
+							className=" block w-full  object-cover h-[100%]"
+							src={slide8}
+							alt="Wild Landscape"
+						/>
+					</div>
+				) : (
+					""
+				)}
+				{slide9 ? (
+					<div className="carousel-item float-left w-full h-full">
+						<Image
+							className=" block w-full  object-cover h-[100%]"
+							src={slide9}
+							alt="Wild Landscape"
+						/>
+					</div>
+				) : (
+					""
+				)}
+				{slide10 ? (
+					<div className="carousel-item float-left w-full h-full">
+						<Image
+							className=" block w-full  object-cover h-[100%]"
+							src={slide10}
+							alt="Wild Landscape"
+						/>
+					</div>
+				) : (
+					""
+				)}
+				{slide11 ? (
+					<div className="carousel-item float-left w-full h-full">
+						<Image
+							className=" block w-full  object-cover h-[100%] "
+							src={slide11}
+							alt="Wild Landscape"
+						/>
+					</div>
+				) : (
+					""
+				)}
+				{slide12 ? (
+					<div className="carousel-item float-left w-full h-full">
+						<Image
+							className=" block w-full  object-cover h-[100%] "
+							src={slide12}
 							alt="Wild Landscape"
 						/>
 					</div>

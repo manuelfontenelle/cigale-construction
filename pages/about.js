@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import Image from "next/image"
 import slide1 from "../public/slide1.jpg"
+import photoProfil from "../public/Kevin-allegre_portrait.jpg"
 
 const about = () => {
 	return (
@@ -28,7 +29,7 @@ const about = () => {
 						/>
 					</div>
 				</section>
-				<section className="py-10 bg-[#0f0f0f] px-5 md:px-10 2xl:px-20">
+				<section className="py-10 bg-[#0f0f0f] px-5 md:px-10 2xl:px-40">
 					<div className="my-6">
 						<h1 className="  font-bold uppercase  text-[#c3a079]  text-2xl 2xl:text-3xl">
 							Cigale Construction
@@ -70,14 +71,17 @@ const about = () => {
 						</p>
 					</div>
 				</section>
-				<section className="pb-20 px-5 md:px-10 2xl:px-20">
-					<div className="flex flex-col gap-10  xl:flex-row xl:items-end">
-						<Image
-							className=" block w-full object-cover  sm:h-[350px] xl:basis-1/4 xl:h-[300px] xl:w-full"
-							src={slide1}
-							alt="Kevin allegre"
-						/>
-						<div className="flex-1 ">
+				<section className="pb-20 px-5 mt-10 md:px-10 2xl:px-40">
+					<div className="flex flex-col gap-12  sm:flex-row md:items-end">
+						<div className=" sm:w-[40%] lg:w-[30%] xl:w-[25%]">
+							<Image
+								className=" block w-full object-cover sm:h-[auto] xl:basis-1/4 xl:h-[auto] xl:w-full"
+								src={photoProfil}
+								alt="Kevin allegre"
+							/>
+						</div>
+
+						<div className="flex-1">
 							<h2 className="text-[#c3a079] text-3xl font-bold ">
 								Kévin Allegre
 							</h2>
@@ -87,8 +91,10 @@ const about = () => {
 									10 ans d’expérience dans la gestion de projet.
 								</span>
 								<br />
+								<br />
 								Sa volonté naturelle de vouloir toujours se dépasser et relever
 								des défis, l’a conduit inévitablement à créer sa propre société.
+								<br />
 								De son expérience antérieure et de son esprit cartésien, il
 								transmet sa rigueur et sa méthodologie à ses équipes dans le but
 								d’une amélioration continue. <br />
