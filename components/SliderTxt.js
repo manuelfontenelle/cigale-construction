@@ -12,7 +12,7 @@ const SliderTxt = () => {
 				<div className="carousel-item active relative float-left w-full ">
 					<div className=" w-full text-white px-16 flex flex-col justify-center items-center sm:px-20 ">
 						<span className="pb-2 text-md">Derek et Hugo</span>
-						<p className="leading-5 text-xs  2xl:text-sm 2xl:leading-6  text-justify">
+						<p className="leading-5 text-xs  2xl:text-sm 2xl:leading-6  md:text-justify">
 							C'était un plaisir absolu de travailler avec Kevin et toute
 							l'équipe de Cigale Construction. Nous entreprenions notre première
 							grande démolition et reconstruction, passant d'un duplex à une
@@ -29,7 +29,7 @@ const SliderTxt = () => {
 				<div className="carousel-item relative float-left w-full">
 					<div className=" w-full text-white px-16 flex flex-col justify-center items-center sm:px-28">
 						<span className="pb-2 text-md">John Doe 2</span>
-						<p className="leading-5 text-xs text-justify 2xl:text-sm 2xl:leading-6">
+						<p className="leading-5 text-xs  2xl:text-sm 2xl:leading-6 md:text-justify">
 							Lorem Ipsum is simply dummy text of the printing and typesetting
 							industry. Lorem Ipsum has been the industry's standard dummy text
 							ever since the 1500s, when an unknown printer took a galley of

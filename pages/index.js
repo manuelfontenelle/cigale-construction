@@ -175,7 +175,7 @@ export default function Home() {
 				</section>
 
 				<section className=" bg-[#0f0f0f] px-5 flex flex-col gap-10 2xl:gap-20 pt-5 pb-12  lg:flex-row lg:flex-wrap md:px-10 2xl:px-40">
-					<div className="h-[420px] 2xl:h-[470px]  md:flex-1 ">
+					<div className=" 2xl:h-[470px]  md:flex-1 ">
 						<Image
 							src={ratesIcon}
 							alt="Témoignages clients"
