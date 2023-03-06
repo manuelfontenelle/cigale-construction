@@ -46,7 +46,7 @@ const career = () => {
 						<div className=" block w-full object-cover  xl:w-[50%] ">
 							<p className=" text-white font-reg text-sm my-4 leading-6 2xl:text-base 2xl:leading-7 2xl:pr-60">
 								Vous souhaitez nous rejoindre ? Veuillez remplir ce formulaire
-								et nous vous contacteront prochainement :
+								et nous vous contacterons prochainement :
 							</p>
 							<Formulaire2 />
 						</div>

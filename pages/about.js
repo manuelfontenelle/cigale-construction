@@ -42,7 +42,7 @@ const about = () => {
 								BIENHEUREUSE ET DYNAMIQUE
 							</span>
 							<span className="block mt-1 text-[#c3a079]">
-								Entrepreneur Général spécialisé dans la réalisation de projet
+								Entrepreneur Général spécialisé dans la réalisation de projets
 								Architecturaux.
 								<br />
 								Nous œuvrons dans l’aire du grand Montréal.
@@ -61,13 +61,13 @@ const about = () => {
 								CONFIEZ NOUS VOS CLEFS
 							</span>
 							<span className=" w-16 h-0.5 mt-1.5 mb-3 bg-[#c3a079] block text-center"></span>
-							Notre ADN est guidé par la maitrise de la performance. <br /> Fort
+							Notre ADN est guidé par la maîtrise de la performance. <br /> Fort
 							d’une équipe regroupant des talents, CIGALE CONSTRUCTION se donne
 							le devoir de livrer votre projet dans le respect des coûts de
-							construction, des échéanciers et de la qualité de l’ouvrage CIGALE
-							CONSTRUCTION se distingue par ses connaissances, son savoir-faire,
-							son service d’accompagnement, la qualité de ses réalisations pour
-							l’entière satisfaction de nos clients.
+							construction, des échéanciers et de la qualité de l’ouvrage.
+							<br /> CIGALE CONSTRUCTION se distingue par ses connaissances, son
+							savoir-faire, son service d’accompagnement, la qualité de ses
+							réalisations pour l’entière satisfaction de nos clients.
 						</p>
 					</div>
 				</section>
@@ -99,10 +99,11 @@ const about = () => {
 								transmet sa rigueur et sa méthodologie à ses équipes dans le but
 								d’une amélioration continue. <br />
 								<br />
-								Personne au grand cœur, Kevin a participé à deux missions
-								humanitaires à l’étranger. <br />
-								C’était donc inéluctable pour lui que Cigale Construction soit
-								partenaire d’Architecte Sans Frontière Québec.
+								Personne au grand cœur, Kévin a participé à deux missions
+								humanitaires à l’étranger visant à améliorer l’habitat. <br />
+								Il a souhaité continuer son engagement à travers Cigale
+								Construction qui est fièrement partenaire d’Architecte Sans
+								Frontière Québec.
 							</p>
 						</div>
 					</div>

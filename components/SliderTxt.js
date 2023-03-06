@@ -27,14 +27,18 @@ const SliderTxt = () => {
 					</div>
 				</div>
 				<div className="carousel-item relative float-left w-full">
-					<div className=" w-full text-white px-16 flex flex-col justify-center items-center sm:px-28">
-						<span className="pb-2 text-md">John Doe 2</span>
+					<div className=" w-full text-white px-16 flex flex-col justify-center items-center sm:px-20">
+						<span className="pb-2 text-md">Lise G</span>
 						<p className="leading-5 text-xs  2xl:text-sm 2xl:leading-6 md:text-justify">
-							Lorem Ipsum is simply dummy text of the printing and typesetting
-							industry. Lorem Ipsum has been the industry's standard dummy text
-							ever since the 1500s, when an unknown printer took a galley of
-							type and scrambled it to make a type specimen book Lorem Ipsum has
-							been the industry's standard dummy text ever since the 1500s,
+							J’ai utilisé les services de Cigale Construction pour la
+							rénovation de deux appartements en 2021. Détenant de l’expérience
+							en construction, j’ai reconnu en cette compagnie le
+							professionnalisme dont j’avais besoin. Ils ont su livrer le projet
+							à la hauteur de mes attentes. Très satisfaite de la qualité des
+							travaux ainsi que du suivi que j’ai eu, je leur ai donné un
+							deuxième contrat pour la rénovation de deux autres appartements en
+							2022. Encore une fois j’ai une un service qualité tout comme le
+							travail réalisé. Je les recommande à tous mes amis
 						</p>
 					</div>
 				</div>
