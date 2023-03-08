@@ -35,7 +35,7 @@ const career = () => {
 						/>
 					</div>
 				</section>
-				<section className="py-10 bg-[#0f0f0f] px-5 md:px-10 2xl:px-20">
+				<section className="py-10 bg-[#0f0f0f] px-5 md:px-10 2xl:px-40">
 					<div className="my-6">
 						<h1 className="  font-bold uppercase  text-[#c3a079] text-2xl 2xl:text-3xl">
 							Candidature Spontannée
