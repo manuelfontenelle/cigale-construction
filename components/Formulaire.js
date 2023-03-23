@@ -395,7 +395,7 @@ const Formulaire = () => {
 						Envoyer
 					</button>
 					<div className="hidden" id="loader">
-						<div className="mx-auto w-96 flex justify-center">
+						<div className="mx-auto flex justify-center">
 							<ThreeDots
 								id="loaderId"
 								height="80"
