@@ -4,7 +4,7 @@ import Head from "next/head"
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import Image from "next/image"
-import slide1 from "../public/slide1.jpg"
+import slide1 from "../public/page_quisommesnous.jpg"
 import photoProfil from "../public/kevin-allegre_portrait.jpg"
 
 const about = () => {
@@ -21,9 +21,9 @@ const about = () => {
 			<NavBar />
 			<main className="min-h-screen bg-[#0f0f0f]">
 				<section className="  pt-20">
-					<div className="h-96">
+					<div className="md:h-[31rem]">
 						<Image
-							className=" block w-full object-cover h-[100%]"
+							className=" block w-full object-cover h-[100%] "
 							src={slide1}
 							alt="Cigale Construction"
 						/>
