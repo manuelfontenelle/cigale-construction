@@ -79,15 +79,15 @@ export default function Home() {
 				<section className=" py-10 bg-[#0f0f0f] px-5 md:px-10 2xl:px-40">
 					<div className="my-6">
 						<h1 className=" text-white font-bold uppercase text-center text-3xl">
-							Projets réalisés
+							réalisations
 						</h1>
 						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block mx-auto text-center"></span>
 					</div>
 
 					<div className="flex flex-col  gap-10 2xl:gap-20 py-10 lg:flex-row lg:flex-wrap">
 						<div className="basis-1/3 flex-1">
-							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
-								Lorem Ipsum
+							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4 uppercase">
+								Transformation
 							</h2>
 							<Slider
 								number="number1"
@@ -98,15 +98,16 @@ export default function Home() {
 								slide5={slide5}
 							/>
 							<p className=" text-white font-light  text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s, when an unknown printer took a galley
-								of type and scrambled it to make a type specimen book.
+								Vous êtes propriétaire d’un bien et souhaitez le transformer ?
+								Que ce soit une unification en maison unifamiliale, une
+								transformation de commerces en Condos… Toute l’équipe de Cigale
+								construction mènera votre projet à therme avec
+								professionnalisme, efficacité et sérénité.
 							</p>
 						</div>
 						<div className="basis-1/3 flex-1">
-							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
-								Rénovation haut de gamme, ville Mont Royal
+							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4 uppercase">
+								Rénovation majeure
 							</h2>
 							<Slider
 								number="number2"
@@ -124,15 +125,15 @@ export default function Home() {
 								slide12={Projet2slide12}
 							/>
 							<p className=" text-white font-light text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s, when an unknown printer took a galley
-								of type and scrambled it to make a type specimen book.
+								Le temps passe et laisse ses traces… La famille s’agrandit et
+								les espaces doivent être repensés. Votre intérieur abrite chaque
+								étape de votre vie et doit s’y adapter. Nous sommes là pour le
+								faire évoluer selon vos besoins
 							</p>
 						</div>
 						<div className="basis-1/3 flex-1">
-							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
-								Rénovation appartement locatif
+							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4 uppercase">
+								Agrandissement
 							</h2>
 							<Slider
 								number="number3"
@@ -145,15 +146,16 @@ export default function Home() {
 								slide7={Projet3slide7}
 							/>
 							<p className=" text-white font-light text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s, when an unknown printer took a galley
-								of type and scrambled it to make a type specimen book.
+								L’agrandissement de maison consiste à augmenter la surface
+								habitable de votre bien. Qu’il s’agisse d’ajouter un étage,
+								d’excaver votre sous-sol ou simplement d’allonger votre bien,
+								Cigale Construction détient l’expertise pour vous livrer votre
+								projet clé en main.
 							</p>
 						</div>
 						<div className="basis-1/3 flex-1">
-							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4">
-								Travaux structuraux
+							<h2 className=" text-[#c3a079] font-semibold text-2xl mb-4 uppercase">
+								Commercial
 							</h2>
 							<Slider
 								number="number4"
@@ -165,10 +167,9 @@ export default function Home() {
 								slide6={Projet4slide6}
 							/>
 							<p className=" text-white font-reg text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s, when an unknown printer took a galley
-								of type and scrambled it to make a type specimen book.
+								Vous voulez rénover vos appartements locatifs ? Votre restaurant
+								ou vos bureaux ? Nous savons être compétitif tout en apportant
+								des matériaux de qualités pour vos projets.
 							</p>
 						</div>
 					</div>
