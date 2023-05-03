@@ -31,17 +31,18 @@ const about = () => {
 				</section>
 				<section className="py-10 bg-[#0f0f0f] px-5 md:px-10 2xl:px-40">
 					<div className="my-6">
-						<h1 className="  font-bold uppercase  text-[#c3a079]  text-2xl 2xl:text-3xl">
+						<h1 className=" text-center font-bold uppercase  text-[#c3a079]  text-2xl 2xl:text-3xl">
 							Cigale Construction
 						</h1>
-						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block "></span>
+
+						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block mx-auto text-center mb-16"></span>
 						<p className=" text-white font-reg text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
 							<span className="block italic font-bold  text-lg 2xl:text-xl ">
 								EXPÉRIENCE MATURE, DES COMPÉTENCES AVANCÉES, DES COLLABORATIONS
 								DISTINGUÉES, UN RÉSEAU SOLIDE, DES VALEURS RECONNUES, UNE ÉQUIPE
 								BIENHEUREUSE ET DYNAMIQUE
 							</span>
-							<span className="block mt-1 text-[#c3a079]">
+							<span className="block mt-1 ">
 								Entrepreneur Général spécialisé dans la réalisation de projets
 								Architecturaux.
 								<br />

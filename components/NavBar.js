@@ -40,7 +40,13 @@ const NavBar = () => {
 				{currentRoute === "/" && scrollPosition === 0 ? (
 					""
 				) : (
-					<Image src={logo} width="130" alt="Logo Cigale Construction"></Image>
+					<Link href="/">
+						<Image
+							src={logo}
+							width="130"
+							alt="Logo Cigale Construction"
+						></Image>
+					</Link>
 				)}
 
 				<div>
@@ -58,7 +64,7 @@ const NavBar = () => {
 							className={currentRoute === "/about" ? "active" : "nonActive"}
 						>
 							<li className="ml-10 text-sm uppercase borderBottomCustom">
-								Qui sommes-nous ?
+								Nous
 							</li>
 						</Link>
 						<Link
@@ -66,7 +72,7 @@ const NavBar = () => {
 							className={currentRoute === "/contact" ? "active" : "nonActive"}
 						>
 							<li className="ml-10 text-sm uppercase borderBottomCustom">
-								Demander une estimation
+								Estimation
 							</li>
 						</Link>
 						<Link
@@ -95,7 +101,9 @@ const NavBar = () => {
 				>
 					<div>
 						<div className="flex w-full items-center justify-between">
-							<Image src={logo} width="125" alt="/"></Image>
+							<Link href="/">
+								<Image src={logo} width="125" alt="/"></Image>
+							</Link>
 							<div onClick={handleNav} className=" p-3 cursor-pointer">
 								<AiOutlineClose size={20} />
 							</div>
@@ -112,10 +120,10 @@ const NavBar = () => {
 								<li className="py-4 text-sm">Accueil</li>
 							</Link>
 							<Link href="/about">
-								<li className="py-4 text-sm">Qui sommes-nous ?</li>
+								<li className="py-4 text-sm">Nous</li>
 							</Link>
 							<Link href="/contact">
-								<li className="py-4 text-sm">Demander une estimation</li>
+								<li className="py-4 text-sm">Estimation</li>
 							</Link>
 							<Link href="/career">
 								<li className="py-4 text-sm">Carrière</li>

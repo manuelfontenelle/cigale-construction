@@ -51,7 +51,10 @@ import slide3 from "../public/slide3.jpg"
 import slide4 from "../public/slide4.jpg"
 import slide5 from "../public/slide5.jpg"
 import ratesIcon from "../public/rates-icon.svg"
-import archiIcon from "../public/archi-icon.svg"
+import certif1 from "../public/certifications/Apchq.png"
+import certif2 from "../public/certifications/Architecte-sans-frontière.png"
+import certif3 from "../public/certifications/Novo-climat.svg"
+// import archiIcon from "../public/archi-icon.svg"
 
 export default function Home() {
 	// 	// const [darkMode, setDarkMode] = useState(false)
@@ -175,8 +178,8 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className=" bg-[#0f0f0f] px-5 flex flex-col gap-10 2xl:gap-20 pt-5 pb-12  lg:flex-row lg:flex-wrap md:px-10 2xl:px-40">
-					<div className=" 2xl:h-[470px]  md:flex-1 ">
+				<section className=" bg-[#0f0f0f] px-5 gap-10 2xl:gap-20 pt-5 pb-16 md:px-10 2xl:px-40">
+					<div className=" md:h-[390px]  md:flex-1  ">
 						<Image
 							src={ratesIcon}
 							alt="Témoignages clients"
@@ -189,7 +192,7 @@ export default function Home() {
 						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block mx-auto text-center"></span>
 						<SliderTxt />
 					</div>
-					<div className=" h-[400px] 2xl:h-[470px] md:flex-1">
+					{/* <div className=" h-[400px] 2xl:h-[470px] md:flex-1">
 						<Image
 							src={archiIcon}
 							alt="Témoignages Architectes"
@@ -201,6 +204,35 @@ export default function Home() {
 						</h1>
 						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block mx-auto text-center"></span>
 						<SliderTxt2 />
+					</div> */}
+				</section>
+
+				<section className=" bg-[#0f0f0f] px-5 flex flex-col gap-10 2xl:gap-10 pt-5 pb-20   md:px-10 2xl:px-40">
+					<div className="md:flex-1 mb-5">
+						<h1 className=" text-white font-bold uppercase text-center text-3xl">
+							Certifications
+						</h1>
+						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block mx-auto text-center"></span>
+					</div>
+					<div className="flex flex-col gap-14 lg:flex-row  items-center">
+						<Image
+							src={certif1}
+							alt="Apchq"
+							width={100}
+							className="  mx-auto w-[150px] md:w-[220px]"
+						/>
+						<Image
+							src={certif2}
+							alt="Apchq"
+							width={100}
+							className="  mx-auto  w-[220px] md:w-[250px] "
+						/>
+						<Image
+							src={certif3}
+							alt="Apchq"
+							width={100}
+							className="  mx-auto  w-[160px] md:w-[200px]"
+						/>
 					</div>
 				</section>
 			</main>

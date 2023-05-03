@@ -4,15 +4,15 @@ const SliderTxt = () => {
 	return (
 		<div
 			id="carouselExampleControls"
-			className="carousel slide relative w-full xl:w-[88%] mx-auto"
+			className="carousel slide relative w-full xl:w-[70%] mx-auto mt-10"
 			data-bs-ride="carousel"
 			data-bs-interval="false"
 		>
 			<div className="carousel-inner relative w-full my-5  overflow-hidden ">
 				<div className="carousel-item active relative float-left w-full ">
-					<div className=" w-full text-white px-16 flex flex-col justify-center items-center sm:px-20 ">
+					<div className=" w-full text-white px-16 flex flex-col justify-center items-center sm:px-40 ">
 						<span className="pb-2 text-md">Derek et Hugo</span>
-						<p className="leading-5 text-xs  2xl:text-sm 2xl:leading-6  md:text-justify">
+						<p className="leading-5 text-xs  md:text-sm md:leading-6  md:text-justify">
 							C'était un plaisir absolu de travailler avec Kevin et toute
 							l'équipe de Cigale Construction. Nous entreprenions notre première
 							grande démolition et reconstruction, passant d'un duplex à une
@@ -27,17 +27,17 @@ const SliderTxt = () => {
 					</div>
 				</div>
 				<div className="carousel-item relative float-left w-full">
-					<div className=" w-full text-white px-16 flex flex-col justify-center items-center sm:px-20">
+					<div className=" w-full text-white px-16 flex flex-col justify-center items-center sm:px-40">
 						<span className="pb-2 text-md">Lise G</span>
-						<p className="leading-5 text-xs  2xl:text-sm 2xl:leading-6 md:text-justify">
-							J’ai utilisé les services de Cigale Construction pour la
-							rénovation de deux appartements en 2021. Détenant de l’expérience
-							en construction, j’ai reconnu en cette compagnie le
-							professionnalisme dont j’avais besoin. Ils ont su livrer le projet
+						<p className="leading-5 text-xs md:text-sm md:leading-6 md:text-justify">
+							J'ai utilisé les services de Cigale Construction pour la
+							rénovation de deux appartements en 2021. Détenant de l'expérience
+							en construction, j'ai reconnu en cette compagnie le
+							professionnalisme dont j'avais besoin. Ils ont su livrer le projet
 							à la hauteur de mes attentes. Très satisfaite de la qualité des
-							travaux ainsi que du suivi que j’ai eu, je leur ai donné un
+							travaux ainsi que du suivi que j'ai eu, je leur ai donné un
 							deuxième contrat pour la rénovation de deux autres appartements en
-							2022. Encore une fois j’ai une un service qualité tout comme le
+							2022. Encore une fois j'ai une un service qualité tout comme le
 							travail réalisé. Je les recommande à tous mes amis
 						</p>
 					</div>

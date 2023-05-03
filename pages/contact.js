@@ -20,11 +20,8 @@ const contact = () => {
 	return (
 		<div>
 			<Head>
-				<title>Cigale Construction - Demander une estimation</title>
-				<meta
-					name="description"
-					content="Cigale Construction - Demander une estimation"
-				/>
+				<title>Cigale Construction - Estimation</title>
+				<meta name="description" content="Cigale Construction - Estimation" />
 				<link rel="icon" href="/favicon.png" />
 			</Head>
 			<NavBar />
@@ -41,7 +38,7 @@ const contact = () => {
 				<section className="py-10 bg-[#0f0f0f] px-5 md:px-10 2xl:px-40">
 					<div className="my-6">
 						<h1 className="  font-bold uppercase  text-[#c3a079]  text-2xl 2xl:text-3xl">
-							Demander une estimation
+							Estimation
 						</h1>
 						<span className=" w-32 h-0.5 mt-2.5 bg-[#c3a079] block text-center"></span>
 					</div>
