@@ -11,12 +11,26 @@ const about = () => {
 	return (
 		<div>
 			<Head>
-				<title>Cigale Construction - Qui sommes-nous ?</title>
+				<title>Cigale Construction - Nous</title>
 				<meta
 					name="description"
-					content="Cigale Construction - Qui sommes-nous ?"
+					content="Fort d'une équipe regroupant des talents, CIGALE CONSTRUCTION se donne le devoir de livrer votre projet dans le respect des coûts de construction, des échéanciers et de la qualité de l'ouvrage.
+CIGALE CONSTRUCTION se distingue par ses connaissances, son savoir-faire, son service d'accompagnement, la qualité de ses réalisations pour l'entière satisfaction de nos clients."
 				/>
 				<link rel="icon" href="/favicon.png" />
+				<meta property="og:title" content="Cigale Construction - Nous" />
+				<meta
+					property="og:description "
+					content="Fort d'une équipe regroupant des talents, CIGALE CONSTRUCTION se donne le devoir de livrer votre projet dans le respect des coûts de construction, des échéanciers et de la qualité de l'ouvrage.
+CIGALE CONSTRUCTION se distingue par ses connaissances, son savoir-faire, son service d'accompagnement, la qualité de ses réalisations pour l'entière satisfaction de nos clients."
+				/>
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://www.cigaleconstruction.ca" />
+				<meta
+					property="og:image"
+					content="https://www.cigaleconstruction.ca/og-background.jpg"
+				/>
+				<meta property="og:site_name" content="Cigale Construction" />
 			</Head>
 			<NavBar />
 			<main className="min-h-screen bg-[#0f0f0f]">
@@ -46,13 +60,13 @@ const about = () => {
 								Entrepreneur Général spécialisé dans la réalisation de projets
 								Architecturaux.
 								<br />
-								Nous œuvrons dans l’aire du grand Montréal.
+								Nous œuvrons dans l'aire du grand Montréal.
 							</span>
 							<span className="block mt-10 font-bold text-lg text-[#c3a079]">
 								NOTRE MISSION
 							</span>
 							<span className=" w-16 h-0.5 mt-1.5 mb-3 bg-[#c3a079] block "></span>
-							Est de réaliser vos travaux en étant à l’écoute de vos besoins, de
+							Est de réaliser vos travaux en étant à l'écoute de vos besoins, de
 							vos attentes et de vos objectifs.
 							<br />
 							En respectant ceux-ci, notre posture sera de challenger votre
@@ -63,12 +77,12 @@ const about = () => {
 							</span>
 							<span className=" w-16 h-0.5 mt-1.5 mb-3 bg-[#c3a079] block text-center"></span>
 							Notre ADN est guidé par la maîtrise de la performance. <br /> Fort
-							d’une équipe regroupant des talents, CIGALE CONSTRUCTION se donne
+							d'une équipe regroupant des talents, CIGALE CONSTRUCTION se donne
 							le devoir de livrer votre projet dans le respect des coûts de
-							construction, des échéanciers et de la qualité de l’ouvrage.
+							construction, des échéanciers et de la qualité de l'ouvrage.
 							<br /> CIGALE CONSTRUCTION se distingue par ses connaissances, son
-							savoir-faire, son service d’accompagnement, la qualité de ses
-							réalisations pour l’entière satisfaction de nos clients.
+							savoir-faire, son service d'accompagnement, la qualité de ses
+							réalisations pour l'entière satisfaction de nos clients.
 						</p>
 					</div>
 				</section>
@@ -88,22 +102,22 @@ const about = () => {
 							</h2>
 							<p className=" text-white font-reg text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7 ">
 								<span className="font-bold">
-									Diplômé de l’école d’ingénieur du CESI, Kévin cumule plus de
-									10 ans d’expérience dans la gestion de projet.
+									Diplômé de l'école d'ingénieur du CESI, Kévin cumule plus de
+									10 ans d'expérience dans la gestion de projet.
 								</span>
 								<br />
 								<br />
 								Sa volonté naturelle de vouloir toujours se dépasser et relever
-								des défis, l’a conduit inévitablement à créer sa propre société.
+								des défis, l'a conduit inévitablement à créer sa propre société.
 								<br />
 								De son expérience antérieure et de son esprit cartésien, il
 								transmet sa rigueur et sa méthodologie à ses équipes dans le but
-								d’une amélioration continue. <br />
+								d'une amélioration continue. <br />
 								<br />
 								Personne au grand cœur, Kévin a participé à deux missions
-								humanitaires à l’étranger visant à améliorer l’habitat. <br />
+								humanitaires à l'étranger visant à améliorer l'habitat. <br />
 								Il a souhaité continuer son engagement à travers Cigale
-								Construction qui est fièrement partenaire d’Architecte Sans
+								Construction qui est fièrement partenaire d'Architecte Sans
 								Frontière Québec.
 							</p>
 						</div>

@@ -10,19 +10,30 @@ import slide1 from "../public/page_estimation.jpg"
 import illu from "../public/illu.svg"
 
 const contact = () => {
-	// useEffect(() => {
-	// 	const use = async () => {
-	// 		;(await import("tw-elements")).default
-	// 	}
-	// 	use()
-	// }, [])
-
 	return (
 		<div>
 			<Head>
 				<title>Cigale Construction - Estimation</title>
-				<meta name="description" content="Cigale Construction - Estimation" />
+				<meta
+					name="description"
+					content="Estimation de votre besoin en rénovation/construction"
+				/>
 				<link rel="icon" href="/favicon.png" />
+				<meta
+					property="og:title"
+					content="Estimation de votre besoin en rénovation/construction"
+				/>
+				<meta
+					property="og:description "
+					content="Cigale Construction - Estimation"
+				/>
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://www.cigaleconstruction.ca" />
+				<meta
+					property="og:image"
+					content="https://www.cigaleconstruction.ca/og-background.jpg"
+				/>
+				<meta property="og:site_name" content="Cigale Construction" />
 			</Head>
 			<NavBar />
 			<main className="min-h-screen bg-[#0f0f0f]">

@@ -1,18 +1,10 @@
 import Head from "next/head"
-// import "flowbite"
 
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import Slider from "../components/Slider"
 import SliderTxt from "../components/SliderTxt"
-import SliderTxt2 from "../components/SliderTxt2"
 
-// import {
-// 	AiFillTwitterCircle,
-// 	AiFillLinkedin,
-// 	AiFillYoutube,
-// } from "react-icons/ai"
-// import { BsFillMoonStarsFill } from "react-icons/bs"
 import { useEffect } from "react"
 
 import Image from "next/image"
@@ -59,10 +51,8 @@ import ratesIcon from "../public/rates-icon.svg"
 import certif1 from "../public/certifications/Apchq.png"
 import certif2 from "../public/certifications/Architecte-sans-frontière.png"
 import certif3 from "../public/certifications/Novo-climat.svg"
-// import archiIcon from "../public/archi-icon.svg"
 
 export default function Home() {
-	// 	// const [darkMode, setDarkMode] = useState(false)
 	useEffect(() => {
 		const use = async () => {
 			;(await import("tw-elements")).default
@@ -74,8 +64,23 @@ export default function Home() {
 		<div className="relative">
 			<Head>
 				<title>Cigale Construction</title>
-				<meta name="description" content="Cigale Construction" />
+				<meta
+					name="description"
+					content="Cigale Construction - Entrepreneur Général spécialisé dans la réalisation de projets Architecturaux. Nous œuvrons dans l'aire du grand Montréal."
+				/>
 				<link rel="icon" href="/favicon.png" />
+				<meta property="og:title" content="Cigale Construction" />
+				<meta
+					property="og:description "
+					content="Cigale Construction - Entrepreneur Général spécialisé dans la réalisation de projets Architecturaux. Nous œuvrons dans l'aire du grand Montréal."
+				/>
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://www.cigaleconstruction.ca" />
+				<meta
+					property="og:image"
+					content="https://www.cigaleconstruction.ca/og-background.jpg"
+				/>
+				<meta property="og:site_name" content="Cigale Construction" />
 			</Head>
 			<NavBar />
 			<main>
@@ -113,9 +118,9 @@ export default function Home() {
 								slide12={Projet1slide12}
 							/>
 							<p className=" text-white font-light  text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
-								Vous êtes propriétaire d’un bien et souhaitez le transformer ?
+								Vous êtes propriétaire d'un bien et souhaitez le transformer ?
 								Que ce soit une unification en maison unifamiliale, une
-								transformation de commerces en Condos… Toute l’équipe de Cigale
+								transformation de commerces en Condos… Toute l'équipe de Cigale
 								construction mènera votre projet à therme avec
 								professionnalisme, efficacité et sérénité.
 							</p>
@@ -138,9 +143,9 @@ export default function Home() {
 								slide10={Projet2slide10}
 							/>
 							<p className=" text-white font-light text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
-								Le temps passe et laisse ses traces… La famille s’agrandit et
+								Le temps passe et laisse ses traces… La famille s'agrandit et
 								les espaces doivent être repensés. Votre intérieur abrite chaque
-								étape de votre vie et doit s’y adapter. Nous sommes là pour le
+								étape de votre vie et doit s'y adapter. Nous sommes là pour le
 								faire évoluer selon vos besoins
 							</p>
 						</div>
@@ -158,10 +163,10 @@ export default function Home() {
 								slide6={Projet3slide6}
 							/>
 							<p className=" text-white font-light text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
-								L’agrandissement de maison consiste à augmenter la surface
-								habitable de votre bien. Qu’il s’agisse d’ajouter un étage,
-								d’excaver votre sous-sol ou simplement d’allonger votre bien,
-								Cigale Construction détient l’expertise pour vous livrer votre
+								L'agrandissement de maison consiste à augmenter la surface
+								habitable de votre bien. Qu'il s'agisse d'ajouter un étage,
+								d'excaver votre sous-sol ou simplement d'allonger votre bien,
+								Cigale Construction détient l'expertise pour vous livrer votre
 								projet clé en main.
 							</p>
 						</div>

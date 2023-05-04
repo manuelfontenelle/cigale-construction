@@ -10,19 +10,21 @@ import slide1 from "../public/page_carrière.jpg"
 import contactImg from "../public/contact.svg"
 
 const career = () => {
-	// useEffect(() => {
-	// 	const use = async () => {
-	// 		;(await import("tw-elements")).default
-	// 	}
-	// 	use()
-	// }, [])
-
 	return (
 		<div>
 			<Head>
 				<title>Cigale Construction - Carrière</title>
-				<meta name="description" content="Cigale Construction - Carrière" />
+				<meta name="description" content="Rejoignez-nous" />
 				<link rel="icon" href="/favicon.png" />
+				<meta property="og:title" content="Cigale Construction - Carrière" />
+				<meta property="og:description " content="Rejoignez-nous" />
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://www.cigaleconstruction.ca" />
+				<meta
+					property="og:image"
+					content="https://www.cigaleconstruction.ca/og-background.jpg"
+				/>
+				<meta property="og:site_name" content="Cigale Construction" />
 			</Head>
 			<NavBar />
 			<main className="min-h-screen bg-[#0f0f0f]">
