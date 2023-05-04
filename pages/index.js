@@ -38,18 +38,18 @@ import Projet3slide5 from "../public/projets/Rénovation-appartement-locatif/005
 import Projet3slide6 from "../public/projets/Rénovation-appartement-locatif/006.jpg"
 import Projet3slide7 from "../public/projets/Rénovation-appartement-locatif/007.jpg"
 
-import Projet4slide1 from "../public/projets/Travaux-structuraux/001.jpg"
-import Projet4slide2 from "../public/projets/Travaux-structuraux/002.jpg"
-import Projet4slide3 from "../public/projets/Travaux-structuraux/003.jpg"
-import Projet4slide4 from "../public/projets/Travaux-structuraux/004.jpg"
-import Projet4slide5 from "../public/projets/Travaux-structuraux/005.jpg"
-import Projet4slide6 from "../public/projets/Travaux-structuraux/006.jpg"
+import Projet4slide1 from "../public/projets/commercial/Commercial-1.jpg"
+import Projet4slide2 from "../public/projets/commercial/Commercial-2.jpg"
+import Projet4slide3 from "../public/projets/commercial/Commercial-3.jpg"
+import Projet4slide4 from "../public/projets/commercial/Commercial-4.jpg"
+import Projet4slide5 from "../public/projets/commercial/Commercial-5.jpg"
 
-import slide1 from "../public/slide1.jpg"
-import slide2 from "../public/slide2.jpg"
-import slide3 from "../public/slide3.jpg"
-import slide4 from "../public/slide4.jpg"
-import slide5 from "../public/slide5.jpg"
+import slide1 from "../public/projets/agrandissement/Agrandissement-1.jpg"
+import slide2 from "../public/projets/agrandissement/Agrandissement-2.jpg"
+import slide3 from "../public/projets/agrandissement/Agrandissement-3.jpg"
+import slide4 from "../public/projets/agrandissement/Agrandissement-4.jpg"
+import slide5 from "../public/projets/agrandissement/Agrandissement-5.jpg"
+import slide6 from "../public/projets/agrandissement/Agrandissement-6.jpg"
 import ratesIcon from "../public/rates-icon.svg"
 import certif1 from "../public/certifications/Apchq.png"
 import certif2 from "../public/certifications/Architecte-sans-frontière.png"
@@ -99,6 +99,7 @@ export default function Home() {
 								slide3={slide3}
 								slide4={slide4}
 								slide5={slide5}
+								slide6={slide6}
 							/>
 							<p className=" text-white font-light  text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
 								Vous êtes propriétaire d’un bien et souhaitez le transformer ?
@@ -140,13 +141,12 @@ export default function Home() {
 							</h2>
 							<Slider
 								number="number3"
-								slide1={Projet3slide1}
-								slide2={Projet3slide2}
-								slide3={Projet3slide3}
-								slide4={Projet3slide4}
-								slide5={Projet3slide5}
-								slide6={Projet3slide6}
-								slide7={Projet3slide7}
+								slide1={slide1}
+								slide2={slide2}
+								slide3={slide3}
+								slide4={slide4}
+								slide5={slide5}
+								slide6={slide6}
 							/>
 							<p className=" text-white font-light text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
 								L’agrandissement de maison consiste à augmenter la surface
@@ -167,7 +167,6 @@ export default function Home() {
 								slide3={Projet4slide3}
 								slide4={Projet4slide4}
 								slide5={Projet4slide5}
-								slide6={Projet4slide6}
 							/>
 							<p className=" text-white font-reg text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
 								Vous voulez rénover vos appartements locatifs ? Votre restaurant
