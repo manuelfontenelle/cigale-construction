@@ -358,7 +358,7 @@ const Formulaire = () => {
 								htmlFor="floatingInput"
 								className="text-gray-400 block mb-2"
 							>
-								Sélectionner une date :
+								Date du début des travaux souhaitée :
 							</label>
 							<DatePicker
 								selected={startDate}
