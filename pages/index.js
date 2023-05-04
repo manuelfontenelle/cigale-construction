@@ -17,26 +17,37 @@ import { useEffect } from "react"
 
 import Image from "next/image"
 import logo from "../public/logo.png"
-import Projet2slide1 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/001.jpg"
-import Projet2slide2 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/002.jpg"
-import Projet2slide3 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/003.jpg"
-import Projet2slide4 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/004.jpg"
-import Projet2slide5 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/005.jpg"
-import Projet2slide6 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/006.jpg"
-import Projet2slide7 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/007.jpg"
-import Projet2slide8 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/008.jpg"
-import Projet2slide9 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/009.jpg"
-import Projet2slide10 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/010.jpg"
-import Projet2slide11 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/011.jpg"
-import Projet2slide12 from "../public/projets/Rénovation-haut-de-gamme-ville-mont-royal/012.jpg"
 
-import Projet3slide1 from "../public/projets/Rénovation-appartement-locatif/001.jpg"
-import Projet3slide2 from "../public/projets/Rénovation-appartement-locatif/002.jpg"
-import Projet3slide3 from "../public/projets/Rénovation-appartement-locatif/003.jpg"
-import Projet3slide4 from "../public/projets/Rénovation-appartement-locatif/004.jpg"
-import Projet3slide5 from "../public/projets/Rénovation-appartement-locatif/005.jpg"
-import Projet3slide6 from "../public/projets/Rénovation-appartement-locatif/006.jpg"
-import Projet3slide7 from "../public/projets/Rénovation-appartement-locatif/007.jpg"
+import Projet1slide1 from "../public/projets/transformation/Transformation-1.jpg"
+import Projet1slide2 from "../public/projets/transformation/Transformation-2.jpg"
+import Projet1slide3 from "../public/projets/transformation/Transformation-3.jpg"
+import Projet1slide4 from "../public/projets/transformation/Transformation-4.jpg"
+import Projet1slide5 from "../public/projets/transformation/Transformation-5.jpg"
+import Projet1slide6 from "../public/projets/transformation/Transformation-6.jpg"
+import Projet1slide7 from "../public/projets/transformation/Transformation-7.jpg"
+import Projet1slide8 from "../public/projets/transformation/Transformation-8.jpg"
+import Projet1slide9 from "../public/projets/transformation/Transformation-9.jpg"
+import Projet1slide10 from "../public/projets/transformation/Transformation-10.jpg"
+import Projet1slide11 from "../public/projets/transformation/Transformation-11.jpg"
+import Projet1slide12 from "../public/projets/transformation/Transformation-12.jpg"
+
+import Projet2slide1 from "../public/projets/renovation/Renovation-1.jpg"
+import Projet2slide2 from "../public/projets/renovation/Renovation-2.jpg"
+import Projet2slide3 from "../public/projets/renovation/Renovation-3.jpg"
+import Projet2slide4 from "../public/projets/renovation/Renovation-4.jpg"
+import Projet2slide5 from "../public/projets/renovation/Renovation-5.jpg"
+import Projet2slide6 from "../public/projets/renovation/Renovation-6.jpg"
+import Projet2slide7 from "../public/projets/renovation/Renovation-7.jpg"
+import Projet2slide8 from "../public/projets/renovation/Renovation-8.jpg"
+import Projet2slide9 from "../public/projets/renovation/Renovation-9.jpg"
+import Projet2slide10 from "../public/projets/renovation/Renovation-10.jpg"
+
+import Projet3slide1 from "../public/projets/agrandissement/Agrandissement-1.jpg"
+import Projet3slide2 from "../public/projets/agrandissement/Agrandissement-2.jpg"
+import Projet3slide3 from "../public/projets/agrandissement/Agrandissement-3.jpg"
+import Projet3slide4 from "../public/projets/agrandissement/Agrandissement-4.jpg"
+import Projet3slide5 from "../public/projets/agrandissement/Agrandissement-5.jpg"
+import Projet3slide6 from "../public/projets/agrandissement/Agrandissement-6.jpg"
 
 import Projet4slide1 from "../public/projets/commercial/Commercial-1.jpg"
 import Projet4slide2 from "../public/projets/commercial/Commercial-2.jpg"
@@ -44,12 +55,6 @@ import Projet4slide3 from "../public/projets/commercial/Commercial-3.jpg"
 import Projet4slide4 from "../public/projets/commercial/Commercial-4.jpg"
 import Projet4slide5 from "../public/projets/commercial/Commercial-5.jpg"
 
-import slide1 from "../public/projets/agrandissement/Agrandissement-1.jpg"
-import slide2 from "../public/projets/agrandissement/Agrandissement-2.jpg"
-import slide3 from "../public/projets/agrandissement/Agrandissement-3.jpg"
-import slide4 from "../public/projets/agrandissement/Agrandissement-4.jpg"
-import slide5 from "../public/projets/agrandissement/Agrandissement-5.jpg"
-import slide6 from "../public/projets/agrandissement/Agrandissement-6.jpg"
 import ratesIcon from "../public/rates-icon.svg"
 import certif1 from "../public/certifications/Apchq.png"
 import certif2 from "../public/certifications/Architecte-sans-frontière.png"
@@ -94,12 +99,18 @@ export default function Home() {
 							</h2>
 							<Slider
 								number="number1"
-								slide1={slide1}
-								slide2={slide2}
-								slide3={slide3}
-								slide4={slide4}
-								slide5={slide5}
-								slide6={slide6}
+								slide1={Projet1slide1}
+								slide2={Projet1slide2}
+								slide3={Projet1slide3}
+								slide4={Projet1slide4}
+								slide5={Projet1slide5}
+								slide6={Projet1slide6}
+								slide7={Projet1slide7}
+								slide8={Projet1slide8}
+								slide9={Projet1slide9}
+								slide10={Projet1slide10}
+								slide11={Projet1slide11}
+								slide12={Projet1slide12}
 							/>
 							<p className=" text-white font-light  text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
 								Vous êtes propriétaire d’un bien et souhaitez le transformer ?
@@ -125,8 +136,6 @@ export default function Home() {
 								slide8={Projet2slide8}
 								slide9={Projet2slide9}
 								slide10={Projet2slide10}
-								slide11={Projet2slide11}
-								slide12={Projet2slide12}
 							/>
 							<p className=" text-white font-light text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
 								Le temps passe et laisse ses traces… La famille s’agrandit et
@@ -141,12 +150,12 @@ export default function Home() {
 							</h2>
 							<Slider
 								number="number3"
-								slide1={slide1}
-								slide2={slide2}
-								slide3={slide3}
-								slide4={slide4}
-								slide5={slide5}
-								slide6={slide6}
+								slide1={Projet3slide1}
+								slide2={Projet3slide2}
+								slide3={Projet3slide3}
+								slide4={Projet3slide4}
+								slide5={Projet3slide5}
+								slide6={Projet3slide6}
 							/>
 							<p className=" text-white font-light text-sm mt-5 leading-6 2xl:text-base 2xl:leading-7">
 								L’agrandissement de maison consiste à augmenter la surface
