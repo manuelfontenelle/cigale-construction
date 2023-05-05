@@ -121,8 +121,8 @@ export default function Home() {
 								Vous êtes propriétaire d'un bien et souhaitez le transformer ?
 								Que ce soit une unification en maison unifamiliale, une
 								transformation de commerces en Condos… Toute l'équipe de Cigale
-								construction mènera votre projet à therme avec
-								professionnalisme, efficacité et sérénité.
+								construction mènera votre projet à terme avec professionnalisme,
+								efficacité et sérénité.
 							</p>
 						</div>
 						<div className="basis-1/3 flex-1">
